@@ -48,7 +48,7 @@ export default function HomePage() {
       <div className="cv-row">
         <div className="photo-card">
           <Image
-            src="/figma/photo.jpg"
+            src="/figma/photo.jpg?v=opt"
             alt={`${profile.nameZh} 照片`}
             width={263}
             height={389}
@@ -110,7 +110,7 @@ export default function HomePage() {
           <div className="project-items">
             <Link href="/works/usv" className="project-item project-item-usv">
               <Image
-                src="/figma/project-usv.png?v=line"
+                src="/figma/project-usv.png?v=opt"
                 alt="无人艇"
                 width={140}
                 height={85}
@@ -119,7 +119,7 @@ export default function HomePage() {
             </Link>
             <Link href="/works/feige" className="project-item project-item-phone">
               <Image
-                src="/figma/project-uav.png?v=bw"
+                src="/figma/project-uav.png?v=opt"
                 alt="飞鸽"
                 width={37}
                 height={80}
@@ -127,7 +127,7 @@ export default function HomePage() {
             </Link>
             <Link href="/works/feige" className="project-item project-item-fp">
               <Image
-                src="/figma/project-fp.png"
+                src="/figma/project-fp.png?v=opt"
                 alt="飞鸽"
                 width={150}
                 height={57}
@@ -135,7 +135,7 @@ export default function HomePage() {
             </Link>
             <Link href="/works/velocare" className="project-item project-item-drone">
               <Image
-                src="/figma/project-drone.png"
+                src="/figma/project-drone.png?v=opt"
                 alt="无人机"
                 width={108}
                 height={62}

@@ -218,13 +218,13 @@ export function FeigeCase() {
           </p>
         </div>
         <Slide
-          src="/works/feige/hifi.jpg?v=color"
+          src="/works/feige/hifi.jpg?v=opt"
           alt="飞鸽 App 高保真界面总览"
           caption="首页、商城/定制、运动、社区、我的。造车和开骑是核心屏。"
         />
         <div className="case-grid-2">
           <Slide
-            src="/works/feige/hifi-detail.jpg?v=color"
+            src="/works/feige/hifi-detail.jpg?v=opt"
             alt="飞鸽 App 高保真关键流程"
             caption="社区留存、骑行记录、部件级定制、方案评估。"
           />
