@@ -77,7 +77,7 @@ export function UsvCase() {
           caption="水墨风效果：景区夜间观光的氛围表达。"
         />
         <Slide
-          src="/works/usv/prototype.png"
+          src="/works/usv/prototype.png?v=full"
           alt="1:20 样机"
           caption="1:20 样机验证尺度和开合。最终外观以重建模型为准。"
         />
@@ -96,18 +96,18 @@ export function UsvCase() {
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/usv/scene.png"
+            src="/works/usv/scene.png?v=full"
             alt="景区无人船发展背景"
             caption="背景：年轻客群、水域景区、环保电推，是产品存在的前提。"
           />
           <Slide
-            src="/works/usv/competitors.png"
+            src="/works/usv/competitors.png?v=full"
             alt="南京玄武湖与扬州欧卡竞品"
             caption="竞品：玄武湖有 L4、全景天窗、大屏；欧卡有预约制。我们补的是空间与水。"
           />
         </div>
         <Slide
-          src="/works/usv/service.png"
+          src="/works/usv/service.png?v=full"
           alt="改进后的服务蓝图"
           caption="服务蓝图：预约 → 登船 → 航行中可开可闭 → 灯光互动 → 离船。"
         />
@@ -146,7 +146,7 @@ export function UsvCase() {
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/usv/v1-sketch.png"
+            src="/works/usv/v1-sketch.png?v=full"
             alt="第一版全封闭草图"
             caption="V1：全封闭、梯形、前后甲板。"
           />
@@ -157,7 +157,7 @@ export function UsvCase() {
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/usv/v2-sketch.png"
+            src="/works/usv/v2-sketch.png?v=full"
             alt="第二版常规游艇草图"
             caption="V2：更常规的全封闭游艇。"
           />
@@ -167,7 +167,7 @@ export function UsvCase() {
           </div>
         </div>
         <Slide
-          src="/works/usv/v3-sketch.png"
+          src="/works/usv/v3-sketch.png?v=full"
           alt="第三版半开放可变方案"
           caption="V3 定稿：半开放降低成本和压抑感，可折叠顶棚覆盖天气和场次，玻璃船头是竞品没有的锚点。"
         />
@@ -183,12 +183,12 @@ export function UsvCase() {
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/usv/interaction.png"
+            src="/works/usv/interaction.png?v=full"
             alt="交互界面与船只相遇灯光"
             caption="相遇有灯光反馈。把无人船从载具变成可感知、可分享的对象。"
           />
           <Slide
-            src="/works/usv/lighting.png"
+            src="/works/usv/lighting.png?v=full"
             alt="灯光与音乐交互"
             caption="夜间场独立卖。灯光和音乐由游客控制，构成另一套产品。"
           />
@@ -205,7 +205,7 @@ export function UsvCase() {
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/usv/v3-sketch.png"
+            src="/works/usv/v3-sketch.png?v=full"
             alt="新造型方向：半开放、可折叠、玻璃船头"
             caption="造型方向：从半封闭游艇转向可变空间观光载具。"
           />
@@ -261,7 +261,7 @@ export function UsvCase() {
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/usv/structure-design.png"
+            src="/works/usv/structure-design.png?v=full"
             alt="结构设计图"
             caption="结构设计：船体零件图与尺寸标注。"
           />
@@ -303,7 +303,7 @@ export function UsvCase() {
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/usv/prototype.png"
+            src="/works/usv/prototype.png?v=full"
             alt="1:20 样机展示"
             caption="1:20 样机是新模型前的实物尺度参考。"
           />
@@ -317,7 +317,7 @@ export function UsvCase() {
           商业上走 B2B2C：景区采购、游客预约。三套收入：日间观光票、夜间灯光音乐场、包艇商务。VR 不做，先打开合、水下观景、灯光音乐这三件事。
         </div>
         <Slide
-          src="/works/usv/cost.png"
+          src="/works/usv/cost.png?v=full"
           alt="成本核算"
           caption="成本：小批量近 4 万，批量生产可压到 3 万左右。"
         />

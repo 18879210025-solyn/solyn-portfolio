@@ -301,12 +301,12 @@ export function TentCase() {
           </p>
         </div>
         <Slide
-          src="/works/tent/lofi.png"
+          src="/works/tent/lofi.png?v=full"
           alt="骑行露营系统低保真与跳转逻辑"
           caption="18 个关键屏按一次出行串起来：设备、记录、活动、营地、骑行、社区。"
         />
         <Slide
-          src="/works/tent/hifi.png"
+          src="/works/tent/hifi.png?v=full"
           alt="飞鸽骑行露营 App 高保真界面"
           caption="色系接 CMF 第三代。这是可用的产品界面，不只是架构图。"
         />
