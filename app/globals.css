@@ -553,6 +553,10 @@ img {
   max-width: 760px;
 }
 
+.case-section-header p + p {
+  margin-top: 10px;
+}
+
 .case-grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -567,6 +571,77 @@ img {
 
 .case-grid-2 + .case-grid-2 {
   margin-top: 12px;
+}
+
+.case-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  min-width: 0;
+}
+
+.case-compare .case-slide {
+  margin: 0;
+}
+
+.case-pair {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.36fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.case-pair-copy .case-index {
+  margin-bottom: 6px;
+}
+
+.case-pair-copy h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.case-pair-copy p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.case-pair-copy p + p {
+  margin-top: 10px;
+}
+
+.case-pair-copy strong {
+  display: block;
+  font-size: 13px;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.case-pair > .case-slide {
+  margin: 0;
+}
+
+.case-inline-fig {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.case-inline-fig img {
+  width: 148px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.case-inline-fig p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .case-grid-1 {
@@ -807,6 +882,8 @@ img {
 
   .case-grid-3,
   .case-grid-2,
+  .case-compare,
+  .case-pair,
   .case-personas,
   .case-funnel {
     grid-template-columns: 1fr;

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { profile } from "@/data/profile";
 
 function EduCard({
@@ -107,7 +108,7 @@ export default function HomePage() {
             <Image src="/figma/bottom-line.svg" alt="" width={1228} height={146} />
           </div>
           <div className="project-items">
-            <a href="/works/usv" className="project-item project-item-usv">
+            <Link href="/works/usv" className="project-item project-item-usv">
               <Image
                 src="/figma/project-usv.png?v=line"
                 alt="无人艇"
@@ -115,31 +116,31 @@ export default function HomePage() {
                 height={85}
                 unoptimized
               />
-            </a>
-            <a href="/works/feige" className="project-item project-item-phone">
+            </Link>
+            <Link href="/works/feige" className="project-item project-item-phone">
               <Image
                 src="/figma/project-uav.png?v=bw"
                 alt="飞鸽"
                 width={37}
                 height={80}
               />
-            </a>
-            <a href="/works/feige" className="project-item project-item-fp">
+            </Link>
+            <Link href="/works/feige" className="project-item project-item-fp">
               <Image
                 src="/figma/project-fp.png"
                 alt="飞鸽"
                 width={150}
                 height={57}
               />
-            </a>
-            <a href="/works/velocare" className="project-item project-item-drone">
+            </Link>
+            <Link href="/works/velocare" className="project-item project-item-drone">
               <Image
                 src="/figma/project-drone.png"
                 alt="无人机"
                 width={108}
                 height={62}
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const navItems = [
+const mainNavItems = [
   { href: "/", label: "首页", icon: "/figma/icon-home.svg" },
   { href: "/works/usv", label: "无人艇", icon: "/figma/icon-ship.svg" },
   { href: "/works/feige", label: "飞鸽", icon: "/figma/icon-bike.svg" },
@@ -11,8 +12,14 @@ const navItems = [
   { href: "/works/velocare", label: "无人机", icon: "/figma/icon-drone.svg" },
 ];
 
+const fastNavItems = [
+  { href: "/fast", label: "FAST", icon: "/figma/icon-fast.svg" },
+];
+
 export function Sidebar() {
   const pathname = usePathname();
+  const isFastPreview = pathname === "/fast" || pathname.startsWith("/fast/");
+  const navItems = isFastPreview ? fastNavItems : mainNavItems;
 
   return (
     <nav className="sidebar" aria-label="主导航">
@@ -20,18 +27,16 @@ export function Sidebar() {
         {navItems.map((item) => {
           const active = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
           return (
-            <a
+            <Link
               key={item.label}
               href={item.href}
-              className={`sidebar-item${active ? " active" : ""}${
-                item.href === "#" ? " disabled" : ""
-              }`}
+              className={`sidebar-item${active ? " active" : ""}`}
             >
               <span className="sidebar-icon">
                 <Image src={item.icon} alt="" width={19} height={19} />
               </span>
               <span className="sidebar-label">{item.label}</span>
-            </a>
+            </Link>
           );
         })}
       </div>

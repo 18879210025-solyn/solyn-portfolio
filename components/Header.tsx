@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { profile } from "@/data/profile";
 
 type HeaderProps = {
@@ -15,21 +16,21 @@ export function Header({ active = "home" }: HeaderProps) {
   return (
     <header className="site-header">
       <div className="wrap nav">
-        <a className="brand" href="/">
+        <Link className="brand" href="/">
           {profile.nameZh}
           <span>{profile.nameEn}</span>
-        </a>
+        </Link>
         <ul className="nav-links">
           {links.map((link) => (
             <li key={link.label}>
-              <a
+              <Link
                 href={link.href}
                 className={`${active === link.key ? "is-active" : ""}${
                   "shell" in link && link.shell ? " is-shell" : ""
                 }`.trim()}
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { works } from "@/data/works";
 
 export function Works() {
@@ -11,7 +12,7 @@ export function Works() {
         </div>
         <div className="work-grid">
           {works.map((work) => (
-            <a className="work-card" href={work.href} key={work.slug}>
+            <Link className="work-card" href={work.href} key={work.slug}>
               <div className="work-cover">
                 <Image
                   src={work.cover}
@@ -34,7 +35,7 @@ export function Works() {
                   ))}
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
