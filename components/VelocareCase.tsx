@@ -72,7 +72,7 @@ export function VelocareCase() {
           </p>
         </div>
         <Slide
-          src="/works/velocare/hero.png"
+          src="/works/velocare/hero.png?v=ppt"
           alt="VeloCare LEMS 产品介绍：一键求助、智能调度、空中直达医院"
           caption="AeroGuard 1.0 作为服务载体：一键求助 → AI 调度 → 空中直达医院。"
         />
@@ -88,7 +88,7 @@ export function VelocareCase() {
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/pain.png"
+            src="/works/velocare/pain.png?v=ppt"
             alt="三类痛点：距离与地形、拥堵与孤岛、就近与专科"
             caption="距离与地形、拥堵与孤岛、就近与专科。目标是对的医院，而不只是最近的医院。"
           />
@@ -105,7 +105,7 @@ export function VelocareCase() {
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/triggers.png"
+            src="/works/velocare/triggers.png?v=ppt"
             alt="静默告警与主动呼叫两套触发"
             caption="Silent Alarm：可穿戴自动呼叫。Active Call：App 一键求助。入口不同，后面的调度和交接共用。"
           />
@@ -122,7 +122,7 @@ export function VelocareCase() {
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/journey.png"
+            src="/works/velocare/journey.png?v=ppt"
             alt="五段救援：危机触发、智能调度、到达换乘、空中监护、院端交接"
             caption="危机触发 → 智能调度 → 到达换乘 → 空中监护 → 院端 bed-to-bed 交接。"
           />
@@ -139,23 +139,21 @@ export function VelocareCase() {
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/system.png"
+            src="/works/velocare/system.png?v=ppt"
             alt="服务系统图：信息流、物资流与资金流"
             caption="利益相关者系统图：现场、机队、调度、医院之间的信息流、物资流和资金流。"
           />
         </div>
-        <div className="case-grid-2">
-          <Slide
-            src="/works/velocare/blueprint.png"
-            alt="服务蓝图：救援前、中、后的前台与后台"
-            caption="服务蓝图：救援前调度、救援中航路与监护、救援后归档，都落在同一套平台上。"
-          />
-          <Slide
-            src="/works/velocare/dispatch.png"
-            alt="实时智能调度：空中 ETA 与地面 ETA 比较后派出"
-            caption="调度决策：同时算空中和地面 ETA，谁快派谁；天气和地形作为硬约束。"
-          />
-        </div>
+        <Slide
+          src="/works/velocare/blueprint.png?v=ppt"
+          alt="服务蓝图：救援前、中、后的前台与后台"
+          caption="服务蓝图：救援前调度、救援中航路与监护、救援后归档，都落在同一套平台上。"
+        />
+        <Slide
+          src="/works/velocare/dispatch.png?v=ppt"
+          alt="实时智能调度：空中 ETA 与地面 ETA 比较后派出"
+          caption="调度决策：同时算空中和地面 ETA，谁快派谁；天气和地形作为硬约束。"
+        />
       </section>
 
       <section className="case-section" id="dispatch">
@@ -168,14 +166,14 @@ export function VelocareCase() {
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/ui.png"
+            src="/works/velocare/ui.png?v=ppt"
             alt="调度中心主界面与任务归档"
             caption="主界面：任务列表 + 实时地图。归档：总时长、航程、生命体征和院端交接记录。"
           />
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/logic.png"
+            src="/works/velocare/logic.png?v=ppt"
             alt="调度中心交互逻辑：告警、接受、确认、执行、归档"
             caption="闭环：告警弹窗 → 接受 / 误报 → 资源确认 → 执行监控 → 归档出报告。"
           />
@@ -190,21 +188,19 @@ export function VelocareCase() {
             低空经济在扩容，城市急救仍然慢。VeloCare 吃的不是全部 UAM，而是其中最紧急、付费意愿最清楚的一段。
           </p>
         </div>
-        <div className="case-grid-2">
-          <Slide
-            src="/works/velocare/tam.png"
-            alt="全球 UAM 增长与湾区 PEST 分析"
-            caption="全球 UAM 2023–2030 从 $1.35B 到 $28.6B。湾区有政策口子、产业链和 700+ 航路。"
-          />
-          <Slide
-            src="/works/velocare/swot.png"
-            alt="TAM SAM SOM 市场分层"
-            caption="TAM 是中国低空经济，SAM 是城市急救与 HEMS，SOM 先做政府和医疗机构。"
-          />
-        </div>
+        <Slide
+          src="/works/velocare/tam.png?v=ppt"
+          alt="全球 UAM 增长与湾区 PEST 分析"
+          caption="全球 UAM 2023–2030 从 $1.35B 到 $28.6B。湾区有政策口子、产业链和 700+ 航路。"
+        />
+        <Slide
+          src="/works/velocare/swot.png?v=ppt"
+          alt="TAM SAM SOM 市场分层"
+          caption="TAM 是中国低空经济，SAM 是城市急救与 HEMS，SOM 先做政府和医疗机构。"
+        />
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/strategy.png"
+            src="/works/velocare/strategy.png?v=ppt"
             alt="SWOT：垂直起降与政策窗口，对冲适航与起降限制"
             caption="优势是垂直起降和自研调度；窗口是低空政策与地面急救低效。风险集中在动力失效和城市起降限制。"
           />
@@ -221,7 +217,7 @@ export function VelocareCase() {
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/compare.png"
+            src="/works/velocare/compare.png?v=ppt"
             alt="三种医疗救援工具的成本对比：直升机、eVTOL、地面救护车"
             caption="单次成本 $191，对标直升机 $10,375、救护车 $312.50。采购价介于两者之间。"
           />
@@ -236,18 +232,16 @@ export function VelocareCase() {
             先让医院和企业为确定性付费，再把家庭会员做成补充盘。政府、保险和公益基金是第二付费方。
           </p>
         </div>
-        <div className="case-grid-2">
-          <Slide
-            src="/works/velocare/canvas.png"
-            alt="LEMS 收入与成本结构"
-            caption="收入来自长期合同、按次任务费和会员订阅。成本以机队、值守、充电和云平台为主。"
-          />
-          <Slide
-            src="/works/velocare/gtm.png"
-            alt="商业画布：问题、客户、方案与收支"
-            caption="商业画布：20 分钟到达、屋顶级起降、空地同一平台。渠道走医院和城市应急体系。"
-          />
-        </div>
+        <Slide
+          src="/works/velocare/canvas.png?v=ppt"
+          alt="商业画布：问题、客户、方案与收支"
+          caption="商业画布：20 分钟到达、屋顶级起降、空地同一平台。渠道走医院和城市应急体系。"
+        />
+        <Slide
+          src="/works/velocare/gtm.png?v=ppt"
+          alt="GTM：深圳试点后逐城复制"
+          caption="先选定一个成功试点城市，从深圳起步，再逐城推广到全国。"
+        />
         <div className="case-quote">
           我做的不是再画一架急救飞机，而是把「谁触发、谁调度、送到哪、谁付钱」收成同一套可试点的城市服务。先在湾区把首单做成可被看见的样本，再复制到下一座城市。
         </div>

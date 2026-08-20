@@ -94,18 +94,16 @@ export function UsvCase() {
         <div className="case-quote">
           竞品已经在做 L4 和大屏语音。缺口是空间可变、亲水看水下、夜间有氛围。不做更好的自动驾驶船，做不同的空间体验。
         </div>
-        <div className="case-grid-2">
-          <Slide
-            src="/works/usv/scene.png?v=full"
-            alt="景区无人船发展背景"
-            caption="背景：年轻客群、水域景区、环保电推，是产品存在的前提。"
-          />
-          <Slide
-            src="/works/usv/competitors.png?v=full"
-            alt="南京玄武湖与扬州欧卡竞品"
-            caption="竞品：玄武湖有 L4、全景天窗、大屏；欧卡有预约制。我们补的是空间与水。"
-          />
-        </div>
+        <Slide
+          src="/works/usv/scene.png?v=full"
+          alt="景区无人船发展背景"
+          caption="背景：年轻客群、水域景区、环保电推，是产品存在的前提。"
+        />
+        <Slide
+          src="/works/usv/competitors.png?v=full"
+          alt="南京玄武湖与扬州欧卡竞品"
+          caption="竞品：玄武湖有 L4、全景天窗、大屏；欧卡有预约制。我们补的是空间与水。"
+        />
         <Slide
           src="/works/usv/service.png?v=full"
           alt="改进后的服务蓝图"
@@ -144,27 +142,23 @@ export function UsvCase() {
             </div>
           </div>
         </div>
-        <div className="case-grid-2">
-          <Slide
-            src="/works/usv/v1-sketch.png?v=full"
-            alt="第一版全封闭草图"
-            caption="V1：全封闭、梯形、前后甲板。"
-          />
-          <div className="case-card">
-            <h3>V1 为什么被否</h3>
-            <p>梯形舱体压缩了内部空间，乘客坐下后视野受限，走动也不方便。核心任务是看水和走动，这个布局让主任务变难。</p>
-          </div>
+        <Slide
+          src="/works/usv/v1-sketch.png?v=full"
+          alt="第一版全封闭草图"
+          caption="V1：全封闭、梯形、前后甲板。"
+        />
+        <div className="case-card">
+          <h3>V1 为什么被否</h3>
+          <p>梯形舱体压缩了内部空间，乘客坐下后视野受限，走动也不方便。核心任务是看水和走动，这个布局让主任务变难。</p>
         </div>
-        <div className="case-grid-2">
-          <Slide
-            src="/works/usv/v2-sketch.png?v=full"
-            alt="第二版常规游艇草图"
-            caption="V2：更常规的全封闭游艇。"
-          />
-          <div className="case-card">
-            <h3>V2 为什么被否</h3>
-            <p>外形过于常规，缺少新意和特点；全封闭在景区运营里可行性低，通风、登离、造价都是问题。</p>
-          </div>
+        <Slide
+          src="/works/usv/v2-sketch.png?v=full"
+          alt="第二版常规游艇草图"
+          caption="V2：更常规的全封闭游艇。"
+        />
+        <div className="case-card">
+          <h3>V2 为什么被否</h3>
+          <p>外形过于常规，缺少新意和特点；全封闭在景区运营里可行性低，通风、登离、造价都是问题。</p>
         </div>
         <Slide
           src="/works/usv/v3-sketch.png?v=full"
@@ -181,18 +175,16 @@ export function UsvCase() {
             功能服务于三种人和两套场次：观光 / 商务，日间 / 夜间。驾驶保留自动、遥控、手动三模。
           </p>
         </div>
-        <div className="case-grid-2">
-          <Slide
-            src="/works/usv/interaction.png?v=full"
-            alt="交互界面与船只相遇灯光"
-            caption="相遇有灯光反馈。把无人船从载具变成可感知、可分享的对象。"
-          />
-          <Slide
-            src="/works/usv/lighting.png?v=full"
-            alt="灯光与音乐交互"
-            caption="夜间场独立卖。灯光和音乐由游客控制，构成另一套产品。"
-          />
-        </div>
+        <Slide
+          src="/works/usv/interaction.png?v=full"
+          alt="交互界面与船只相遇灯光"
+          caption="相遇有灯光反馈。把无人船从载具变成可感知、可分享的对象。"
+        />
+        <Slide
+          src="/works/usv/lighting.png?v=full"
+          alt="灯光与音乐交互"
+          caption="夜间场独立卖。灯光和音乐由游客控制，构成另一套产品。"
+        />
       </section>
 
       <section className="case-section" id="form">
@@ -203,18 +195,16 @@ export function UsvCase() {
             课上 V3 定了方向。重建时从比例、登离、视线和开合出发：更低更长，开合是整侧舱壁，下半部仍是船体。
           </p>
         </div>
-        <div className="case-grid-2">
-          <Slide
-            src="/works/usv/v3-sketch.png?v=full"
-            alt="新造型方向：半开放、可折叠、玻璃船头"
-            caption="造型方向：从半封闭游艇转向可变空间观光载具。"
-          />
-          <Slide
-            src="/works/usv/line-drawing.png?v=4"
-            alt="新模型线稿图"
-            caption="新模型线稿：船体比例、红色框架与传统花格细节。"
-          />
-        </div>
+        <Slide
+          src="/works/usv/v3-sketch.png?v=full"
+          alt="新造型方向：半开放、可折叠、玻璃船头"
+          caption="造型方向：从半封闭游艇转向可变空间观光载具。"
+        />
+        <Slide
+          src="/works/usv/line-drawing.png?v=4"
+          alt="新模型线稿图"
+          caption="新模型线稿：船体比例、红色框架与传统花格细节。"
+        />
       </section>
 
       <section className="case-section" id="model">
@@ -259,16 +249,14 @@ export function UsvCase() {
             可变空间不是渲染里顶棚消失，而是有轨道、扇、框、排水。ADS 7650 滑轨导向，活动扇闭合成面，挡水檐处理进水。
           </p>
         </div>
-        <div className="case-grid-2">
-          <Slide
-            src="/works/usv/structure-design.png?v=full"
-            alt="结构设计图"
-            caption="结构设计：船体零件图与尺寸标注。"
-          />
-          <div className="case-card">
-            <h3>开合机构的实现</h3>
-            <p>ADS 7650 滑轨导向，活动扇沿轨道开合，闭合时形成连续舱壁；挡水檐与排水槽处理雨天进水，保证开合不是渲染效果而是可工程化结构。</p>
-          </div>
+        <Slide
+          src="/works/usv/structure-design.png?v=full"
+          alt="结构设计图"
+          caption="结构设计：船体零件图与尺寸标注。"
+        />
+        <div className="case-card">
+          <h3>开合机构的实现</h3>
+          <p>ADS 7650 滑轨导向，活动扇沿轨道开合，闭合时形成连续舱壁；挡水檐与排水槽处理雨天进水，保证开合不是渲染效果而是可工程化结构。</p>
         </div>
       </section>
 
@@ -280,16 +268,14 @@ export function UsvCase() {
             分区是驾驶、坐、看水下、开合边界。人机看登离和防夹手。灯带算船体 CMF，不是 App。
           </p>
         </div>
-        <div className="case-grid-2">
-          <Slide
-            src="/works/usv/interior.png"
-            alt="船内陈设图"
-            caption="内舱陈设：L 型沙发、茶几、驾驶区与中式花格。"
-          />
-          <div className="case-card">
-            <h3>人机与 CMF</h3>
-            <p>驾驶区在前、 Lounge 在中、看水下玻璃在船头。CMF 以深木色船体、红色框架、青绿色花格和暖光为主，形成「现代中式」的景区识别。</p>
-          </div>
+        <Slide
+          src="/works/usv/interior.png"
+          alt="船内陈设图"
+          caption="内舱陈设：L 型沙发、茶几、驾驶区与中式花格。"
+        />
+        <div className="case-card">
+          <h3>人机与 CMF</h3>
+          <p>驾驶区在前、 Lounge 在中、看水下玻璃在船头。CMF 以深木色船体、红色框架、青绿色花格和暖光为主，形成「现代中式」的景区识别。</p>
         </div>
       </section>
 
@@ -301,18 +287,16 @@ export function UsvCase() {
             样机验证开合和尺度；静水力看排水；景区缓流用 PE/复合材料。小批量近 4 万，量产可到 3 万。
           </p>
         </div>
-        <div className="case-grid-2">
-          <Slide
-            src="/works/usv/prototype.png?v=full"
-            alt="1:20 样机展示"
-            caption="1:20 样机是新模型前的实物尺度参考。"
-          />
-          <Slide
-            src="/works/usv/running.png"
-            alt="样机运行"
-            caption="运行：验证能开。"
-          />
-        </div>
+        <Slide
+          src="/works/usv/prototype.png?v=full"
+          alt="1:20 样机展示"
+          caption="1:20 样机是新模型前的实物尺度参考。"
+        />
+        <Slide
+          src="/works/usv/running.png"
+          alt="样机运行"
+          caption="运行：验证能开。"
+        />
         <div className="case-quote">
           商业上走 B2B2C：景区采购、游客预约。三套收入：日间观光票、夜间灯光音乐场、包艇商务。VR 不做，先打开合、水下观景、灯光音乐这三件事。
         </div>
