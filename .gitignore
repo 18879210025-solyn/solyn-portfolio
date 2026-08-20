@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+.DS_Store
+*.log
+.env*.local
+.cursor
+.tmp-*
+.venv-*
+*.pptx
+*.ppt
+*.key
+assets/
+

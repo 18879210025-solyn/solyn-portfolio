@@ -1,0 +1,267 @@
+import Image from "next/image";
+import { profile } from "@/data/profile";
+
+const chapters = [
+  { id: "overview", n: "01", label: "概述" },
+  { id: "problem", n: "02", label: "缺口" },
+  { id: "trigger", n: "03", label: "双触发" },
+  { id: "journey", n: "04", label: "五段救援" },
+  { id: "system", n: "05", label: "服务系统" },
+  { id: "dispatch", n: "06", label: "调度产品" },
+  { id: "market", n: "07", label: "市场" },
+  { id: "feasibility", n: "08", label: "可行性" },
+  { id: "business", n: "09", label: "商业化" },
+];
+
+function Slide({
+  src,
+  alt,
+  caption,
+}: {
+  src: string;
+  alt: string;
+  caption?: string;
+}) {
+  return (
+    <figure className="case-slide">
+      <Image src={src} alt={alt} width={1600} height={900} />
+      {caption ? <figcaption>{caption}</figcaption> : null}
+    </figure>
+  );
+}
+
+export function VelocareCase() {
+  return (
+    <article className="case-page">
+      <div className="case-hero">
+        <h1>无人机</h1>
+        <p className="en">VeloCare · 城市低空急救</p>
+        <p>
+          把地面急救从「和交通赛跑」做成可触发、可调度、可交接的空中转运。我跟完整流程：从救援缺口、服务系统、调度产品，到湾区市场和商业化。
+        </p>
+        <dl className="case-meta-row">
+          <div>
+            <dt>年份</dt>
+            <dd>2025</dd>
+          </div>
+          <div>
+            <dt>类型</dt>
+            <dd>服务产品 / 低空急救</dd>
+          </div>
+          <div>
+            <dt>交付</dt>
+            <dd>流程、调度、市场与商业化</dd>
+          </div>
+        </dl>
+        <nav className="case-chapters" aria-label="案例章节">
+          {chapters.map((item) => (
+            <a href={`#${item.id}`} key={item.id}>
+              <span>{item.n}</span>
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      <section className="case-section" id="overview">
+        <div className="case-section-header">
+          <p className="case-index">01 / 09</p>
+          <h2>概述：一键求助，空中送到对的医院</h2>
+          <p>
+            VeloCare 是城市低空急救服务。产品不是一架飞机，而是从告警到床旁交接的整条救援网。目标 20 分钟到达，单次约 $191，医院与政府先行。下方飞行器为概念可视化。
+          </p>
+        </div>
+        <Slide
+          src="/works/velocare/hero.png"
+          alt="VeloCare LEMS 产品介绍：一键求助、智能调度、空中直达医院"
+          caption="AeroGuard 1.0 作为服务载体：一键求助 → AI 调度 → 空中直达医院。"
+        />
+      </section>
+
+      <section className="case-section" id="problem">
+        <div className="case-section-header">
+          <p className="case-index">02 / 09</p>
+          <h2>缺口：地面急救到不了的三类场景</h2>
+          <p>
+            产品不是从「我们有一架 eVTOL」开始，而是从传统转运失败的地方开始。切入点不是替代所有急救，而是补上这三类缺口。
+          </p>
+        </div>
+        <div className="case-grid-1">
+          <Slide
+            src="/works/velocare/pain.png"
+            alt="三类痛点：距离与地形、拥堵与孤岛、就近与专科"
+            caption="距离与地形、拥堵与孤岛、就近与专科。目标是对的医院，而不只是最近的医院。"
+          />
+        </div>
+      </section>
+
+      <section className="case-section" id="trigger">
+        <div className="case-section-header">
+          <p className="case-index">03 / 09</p>
+          <h2>双触发：同一张网，接住两种用户状态</h2>
+          <p>
+            失去行动能力时要故障安全；清醒但地面过不去时要确定性和速度。两套入口进同一套空中救援网络。
+          </p>
+        </div>
+        <div className="case-grid-1">
+          <Slide
+            src="/works/velocare/triggers.png"
+            alt="静默告警与主动呼叫两套触发"
+            caption="Silent Alarm：可穿戴自动呼叫。Active Call：App 一键求助。入口不同，后面的调度和交接共用。"
+          />
+        </div>
+      </section>
+
+      <section className="case-section" id="journey">
+        <div className="case-section-header">
+          <p className="case-index">04 / 09</p>
+          <h2>五段救援：从危机到床旁交接</h2>
+          <p>
+            产品价值不在单次起飞，而在把城市急救从不可控的路况，变成可管理的五段流程。
+          </p>
+        </div>
+        <div className="case-grid-1">
+          <Slide
+            src="/works/velocare/journey.png"
+            alt="五段救援：危机触发、智能调度、到达换乘、空中监护、院端交接"
+            caption="危机触发 → 智能调度 → 到达换乘 → 空中监护 → 院端 bed-to-bed 交接。"
+          />
+        </div>
+      </section>
+
+      <section className="case-section" id="system">
+        <div className="case-section-header">
+          <p className="case-index">05 / 09</p>
+          <h2>服务系统：飞行器只是其中一个节点</h2>
+          <p>
+            真正的产品是把信息、物资和资金同时跑通的救援网络。前台是告警和飞行，后台是机队、航路和院端准备。
+          </p>
+        </div>
+        <div className="case-grid-1">
+          <Slide
+            src="/works/velocare/system.png"
+            alt="服务系统图：信息流、物资流与资金流"
+            caption="利益相关者系统图：现场、机队、调度、医院之间的信息流、物资流和资金流。"
+          />
+        </div>
+        <div className="case-grid-2">
+          <Slide
+            src="/works/velocare/blueprint.png"
+            alt="服务蓝图：救援前、中、后的前台与后台"
+            caption="服务蓝图：救援前调度、救援中航路与监护、救援后归档，都落在同一套平台上。"
+          />
+          <Slide
+            src="/works/velocare/dispatch.png"
+            alt="实时智能调度：空中 ETA 与地面 ETA 比较后派出"
+            caption="调度决策：同时算空中和地面 ETA，谁快派谁；天气和地形作为硬约束。"
+          />
+        </div>
+      </section>
+
+      <section className="case-section" id="dispatch">
+        <div className="case-section-header">
+          <p className="case-index">06 / 09</p>
+          <h2>调度产品：值班员能执行、能复盘</h2>
+          <p>
+            救援网络要被值班员用起来。主界面管执行，归档管复盘；误报和取消也必须能干净结束。
+          </p>
+        </div>
+        <div className="case-grid-1">
+          <Slide
+            src="/works/velocare/ui.png"
+            alt="调度中心主界面与任务归档"
+            caption="主界面：任务列表 + 实时地图。归档：总时长、航程、生命体征和院端交接记录。"
+          />
+        </div>
+        <div className="case-grid-1">
+          <Slide
+            src="/works/velocare/logic.png"
+            alt="调度中心交互逻辑：告警、接受、确认、执行、归档"
+            caption="闭环：告警弹窗 → 接受 / 误报 → 资源确认 → 执行监控 → 归档出报告。"
+          />
+        </div>
+      </section>
+
+      <section className="case-section" id="market">
+        <div className="case-section-header">
+          <p className="case-index">07 / 09</p>
+          <h2>市场：为什么是现在，为什么先湾区</h2>
+          <p>
+            低空经济在扩容，城市急救仍然慢。VeloCare 吃的不是全部 UAM，而是其中最紧急、付费意愿最清楚的一段。
+          </p>
+        </div>
+        <div className="case-grid-2">
+          <Slide
+            src="/works/velocare/tam.png"
+            alt="全球 UAM 增长与湾区 PEST 分析"
+            caption="全球 UAM 2023–2030 从 $1.35B 到 $28.6B。湾区有政策口子、产业链和 700+ 航路。"
+          />
+          <Slide
+            src="/works/velocare/swot.png"
+            alt="TAM SAM SOM 市场分层"
+            caption="TAM 是中国低空经济，SAM 是城市急救与 HEMS，SOM 先做政府和医疗机构。"
+          />
+        </div>
+        <div className="case-grid-1">
+          <Slide
+            src="/works/velocare/strategy.png"
+            alt="SWOT：垂直起降与政策窗口，对冲适航与起降限制"
+            caption="优势是垂直起降和自研调度；窗口是低空政策与地面急救低效。风险集中在动力失效和城市起降限制。"
+          />
+        </div>
+      </section>
+
+      <section className="case-section" id="feasibility">
+        <div className="case-section-header">
+          <p className="case-index">08 / 09</p>
+          <h2>可行性：直升机的速度，接近救护车的成本</h2>
+          <p>
+            地面救护车便宜但慢；HEMS 快但贵、依赖停机坪。LEMS 的位置是响应最快、可达性最高、单次成本最低。
+          </p>
+        </div>
+        <div className="case-grid-1">
+          <Slide
+            src="/works/velocare/compare.png"
+            alt="三种医疗救援工具的成本对比：直升机、eVTOL、地面救护车"
+            caption="单次成本 $191，对标直升机 $10,375、救护车 $312.50。采购价介于两者之间。"
+          />
+        </div>
+      </section>
+
+      <section className="case-section" id="business">
+        <div className="case-section-header">
+          <p className="case-index">09 / 09</p>
+          <h2>商业化：不卖飞机，卖城市空中急救网络</h2>
+          <p>
+            先让医院和企业为确定性付费，再把家庭会员做成补充盘。政府、保险和公益基金是第二付费方。
+          </p>
+        </div>
+        <div className="case-grid-2">
+          <Slide
+            src="/works/velocare/canvas.png"
+            alt="LEMS 收入与成本结构"
+            caption="收入来自长期合同、按次任务费和会员订阅。成本以机队、值守、充电和云平台为主。"
+          />
+          <Slide
+            src="/works/velocare/gtm.png"
+            alt="商业画布：问题、客户、方案与收支"
+            caption="商业画布：20 分钟到达、屋顶级起降、空地同一平台。渠道走医院和城市应急体系。"
+          />
+        </div>
+        <div className="case-quote">
+          我做的不是再画一架急救飞机，而是把「谁触发、谁调度、送到哪、谁付钱」收成同一套可试点的城市服务。先在湾区把首单做成可被看见的样本，再复制到下一座城市。
+        </div>
+      </section>
+
+      <div className="contact-footer">
+        <div>
+          <h2>欢迎联系</h2>
+          <p>作品持续更新中。如需完整过程文件，可以直接来信。</p>
+        </div>
+        <a className="btn" href={`mailto:${profile.email}`}>
+          发送邮件
+        </a>
+      </div>
+    </article>
+  );
+}
