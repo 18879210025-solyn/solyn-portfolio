@@ -359,6 +359,7 @@ img {
   bottom: 20px;
   height: 146px;
   pointer-events: none;
+  z-index: 1;
 }
 
 .bottom-line img {
@@ -372,11 +373,14 @@ img {
   position: relative;
   height: 100%;
   width: 100%;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .project-item {
   position: absolute;
   transition: transform 0.2s ease;
+  pointer-events: auto;
 }
 
 .project-item:hover {
@@ -409,7 +413,8 @@ img {
 }
 
 .project-item-phone img {
-  filter: grayscale(1);
+  object-fit: cover;
+  object-position: center top;
 }
 
 .project-item-fp {
@@ -433,6 +438,17 @@ img {
   bottom: 68px;
   width: 100px;
   height: 60px;
+}
+
+.project-item-fast {
+  position: absolute;
+  left: calc(100% * 933 / 1228);
+  top: auto;
+  bottom: 36px;
+  width: 70px;
+  height: 67px;
+  z-index: 3;
+  opacity: 1;
 }
 
 /* Feige case study */
@@ -1190,6 +1206,14 @@ img {
     position: relative;
     left: auto !important;
     top: auto !important;
+  }
+
+  .project-item-fast {
+    position: absolute;
+    left: calc(100% * 933 / 1228) !important;
+    top: auto !important;
+    bottom: 38px;
+    z-index: 3;
   }
 
   .project-items {

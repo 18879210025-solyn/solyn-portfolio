@@ -104,6 +104,9 @@ export default function HomePage() {
       <div className="projects-section">
         <div className="section-title">项目</div>
         <div className="project-strip">
+          <Link href="/fast" className="project-item project-item-fast">
+            <Image src="/figma/fast-logo.png?v=orig" alt="FAST" width={70} height={67} />
+          </Link>
           <div className="bottom-line">
             <Image src="/figma/bottom-line.svg" alt="" width={1228} height={146} />
           </div>
@@ -119,7 +122,7 @@ export default function HomePage() {
             </Link>
             <Link href="/works/feige" className="project-item project-item-phone">
               <Image
-                src="/figma/project-uav.png?v=opt"
+                src="/figma/project-uav-color.png?v=color"
                 alt="飞鸽"
                 width={37}
                 height={80}
@@ -127,7 +130,7 @@ export default function HomePage() {
             </Link>
             <Link href="/works/feige" className="project-item project-item-fp">
               <Image
-                src="/figma/project-fp.png?v=opt"
+                src="/figma/project-fp-color.png?v=nobg2"
                 alt="飞鸽"
                 width={150}
                 height={57}

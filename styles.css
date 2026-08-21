@@ -325,6 +325,7 @@ img {
   position: relative;
   height: 170px;
   margin-top: 11px;
+  overflow: visible;
 }
 
 .bottom-line {
@@ -334,6 +335,7 @@ img {
   bottom: 0;
   height: 148px;
   pointer-events: none;
+  z-index: 1;
 }
 
 .bottom-line img {
@@ -347,11 +349,14 @@ img {
   position: relative;
   height: 100%;
   width: 100%;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .project-item {
   position: absolute;
   transition: transform 0.2s ease;
+  pointer-events: auto;
 }
 
 .project-item:hover {
@@ -386,7 +391,6 @@ img {
 .project-item-phone img {
   object-fit: cover;
   object-position: center top;
-  filter: grayscale(1);
 }
 
 .project-item-fp {
@@ -395,12 +399,14 @@ img {
   bottom: 88px;
   width: 150px;
   height: 57px;
-  border-radius: 4px;
-  overflow: hidden;
+  overflow: visible;
+  background: transparent;
 }
 
 .project-item-fp img {
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
 }
 
 .project-item-drone {
@@ -411,6 +417,22 @@ img {
   height: 60px;
   border-radius: 4px;
   overflow: hidden;
+}
+
+.project-item-fast {
+  position: absolute;
+  left: calc(100% * 933 / 1228);
+  top: auto;
+  bottom: 36px;
+  width: 70px;
+  height: 67px;
+  z-index: 3;
+  opacity: 1;
+}
+
+.project-item-fast img {
+  object-fit: contain;
+  image-rendering: auto;
 }
 
 .project-item-drone img {
@@ -1260,6 +1282,14 @@ img {
     position: relative;
     left: auto;
     top: auto;
+  }
+
+  .project-item-fast {
+    position: absolute;
+    left: calc(100% * 933 / 1228);
+    top: auto;
+    bottom: 38px;
+    z-index: 3;
   }
 
   .case-grid-2,
