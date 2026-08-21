@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "FAST · 方宇凌 Solyn",
   description:
-    "FAST 智能投放引擎：把跨系统、靠经验的投放做成可对话、可排期、可一键配置的 Agent 工作台。",
+    "FAST 智能投放引擎：AI 工作台与体验设计，从首页对话到排期、活动管理的全流程改版。",
 };
 
 export default function FastPage() {

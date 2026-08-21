@@ -20,6 +20,36 @@
     <div class="app-shell">
       <nav class="sidebar" aria-label="主导航">
         <div class="sidebar-inner">
+          <a class="sidebar-item" href="../index.html">
+            <span class="sidebar-icon">
+              <img src="../public/figma/icon-home.svg" alt="" width="19" height="19" />
+            </span>
+            <span class="sidebar-label">首页</span>
+          </a>
+          <a class="sidebar-item" href="../works/usv.html">
+            <span class="sidebar-icon">
+              <img src="../public/figma/icon-ship.svg" alt="" width="19" height="19" />
+            </span>
+            <span class="sidebar-label">无人艇</span>
+          </a>
+          <a class="sidebar-item" href="/works/feige">
+            <span class="sidebar-icon">
+              <img src="../public/figma/icon-bike.svg" alt="" width="19" height="19" />
+            </span>
+            <span class="sidebar-label">飞鸽</span>
+          </a>
+          <a class="sidebar-item" href="../works/tent.html">
+            <span class="sidebar-icon">
+              <img src="../public/figma/icon-bag.svg" alt="" width="22" height="21" />
+            </span>
+            <span class="sidebar-label">帐篷背包</span>
+          </a>
+          <a class="sidebar-item" href="../works/velocare.html">
+            <span class="sidebar-icon">
+              <img src="../public/figma/icon-drone.svg" alt="" width="19" height="19" />
+            </span>
+            <span class="sidebar-label">无人机</span>
+          </a>
           <a class="sidebar-item active" href="index.html">
             <span class="sidebar-icon">
               <img src="../public/figma/icon-fast.svg" alt="" width="19" height="19" />
@@ -31,7 +61,7 @@
 
       <div class="main">
         <header class="top-bar">
-          <a class="brand-mark" href="index.html">Solyn.</a>
+          <a class="brand-mark" href="../index.html">Solyn.</a>
           <div class="top-line" aria-hidden="true"></div>
         </header>
 
@@ -40,9 +70,6 @@
             <div class="case-hero">
               <h1>FAST</h1>
               <p class="en">智能投放引擎 · AI Workbench</p>
-              <p>
-                给已经带着活动进来的人做工作台，不是给闲聊做一个沉浸页。对话只负责开口；优先级、档期和活动名单必须说同一种话。
-              </p>
               <dl class="case-meta-row">
                 <div>
                   <dt>年份</dt>
@@ -54,129 +81,299 @@
                 </div>
                 <div>
                   <dt>角色</dt>
-                  <dd>工作台结构、排期与活动改版</dd>
+                  <dd>设计全栈</dd>
                 </div>
               </dl>
               <nav class="case-chapters" aria-label="案例章节">
-                <a href="#judgment"><span>01</span>判断</a>
-                <a href="#entry"><span>02</span>入口</a>
-                <a href="#language"><span>03</span>语言</a>
-                <a href="#schedule"><span>04</span>排期</a>
-                <a href="#activity"><span>05</span>活动</a>
+                <a href="#background"><span>01</span>背景</a>
+                <a href="#workbench"><span>02</span>工作台</a>
+                <a href="#schedule"><span>03</span>排期</a>
+                <a href="#activity"><span>04</span>活动</a>
               </nav>
             </div>
 
-            <section class="case-section" id="judgment">
+            <section class="case-section" id="background">
               <div class="case-section-header">
-                <p class="case-index">01 / 05</p>
-                <h2>一次投放要跨系统，不是因为少了一个对话框</h2>
-                <p>
-                  运营配一次投放要进出 3–7 个系统、耗掉两小时以上。缺口不在「不会聊天」，而在排期、活动、触点各说各的：有人记得这条是 S 级，有人只看见它还在审核，日历上撞了节也要事后才发现。
-                </p>
-                <p>
-                  ChatGPT、Gemini、Claude 都把人留在一个空白输入框里，因为它们的用户是空手进来的。FAST 的用户进门时已经有主题、人群、时间和目标。再做一个沉浸对话，只是把旧后台和新聊天窗拼在一起。
-                </p>
+                <p class="case-index">01 / 04</p>
+                <h2>项目背景</h2>
               </div>
-              <div class="case-quote">
-                我要问的不是「Agent 界面怎么更像 ChatGPT」，而是：一个已经拿着活动的人，怎样开口、怎样看日历、怎样扫名单，才不用再靠自己脑内对齐。
+
+              <p class="case-viz-label">现在要付的成本</p>
+              <div class="case-stats">
+                <div class="case-stat">
+                  <strong>3–7</strong>
+                  <span>个系统进出一次投放</span>
+                </div>
+                <div class="case-stat">
+                  <strong>&gt;2h</strong>
+                  <span>配完一轮的人工时间</span>
+                </div>
+                <div class="case-stat">
+                  <strong>100+</strong>
+                  <span>个触点，各自记各自的优先级</span>
+                </div>
+              </div>
+
+              <p class="case-viz-label">产品要走到哪</p>
+              <dl class="case-horizon">
+                <div>
+                  <dt>短期</dt>
+                  <dd>有经验的运营助手：开口就能接着配，不用在系统间搬运。</dd>
+                </div>
+                <div>
+                  <dt>长期</dt>
+                  <dd>把结构化工作自动化：规则内的排期、冲突、审批，Agent 自己走完。</dd>
+                </div>
+              </dl>
+
+              <p class="case-viz-label">Agent 坐在哪</p>
+              <div class="case-flow" aria-label="FAST Agent 工作流">
+                <div class="case-flow-stage">
+                  <p class="case-flow-label">入口</p>
+                  <ul>
+                    <li>投放平台</li>
+                    <li>个人助理</li>
+                    <li>外部引擎</li>
+                  </ul>
+                </div>
+                <div class="case-flow-arrow" aria-hidden="true">→</div>
+                <div class="case-flow-stage case-flow-core">
+                  <p class="case-flow-label">FAST Agent</p>
+                  <p>澄清槽位 → 按规则规划 → 查冲突</p>
+                </div>
+                <div class="case-flow-arrow" aria-hidden="true">→</div>
+                <div class="case-flow-stage">
+                  <p class="case-flow-label">回写</p>
+                  <ul>
+                    <li>排期日历</li>
+                    <li>投放决策</li>
+                    <li>机会反馈</li>
+                  </ul>
+                </div>
+              </div>
+
+              <p class="case-viz-label">三层能力要换掉什么</p>
+              <div class="case-shifts case-shifts-row">
+                <div class="case-shift">
+                  <span>01</span>
+                  <div>
+                    <p class="from">营销系统各自为政</p>
+                    <p class="to">一次开口覆盖全触点</p>
+                  </div>
+                </div>
+                <div class="case-shift">
+                  <span>02</span>
+                  <div>
+                    <p class="from">人在后台里串联每一步</p>
+                    <p class="to">规则内的结构化工作，Agent 自己走完</p>
+                  </div>
+                </div>
+                <div class="case-shift">
+                  <span>03</span>
+                  <div>
+                    <p class="from">做完才知道撞了节、占错位</p>
+                    <p class="to">排期和名单上先看见优先级与节日</p>
+                  </div>
+                </div>
               </div>
             </section>
 
-            <section class="case-section" id="entry">
-              <div class="case-pair">
-                <div class="case-pair-copy">
-                  <p class="case-index">02 / 05</p>
-                  <h2>所以首页要接住「我已经有一个活动」</h2>
-                  <p>
-                    输入框仍然在正中——开口必须便宜。但它下面不是气氛装饰。四条快捷意图是运营每天都会问的句子，写成可点的，就不必每次重新组织语言。
-                  </p>
-                  <p>
-                    再往下的场景不是运营位海报。异地出行、红包提醒、秋奶是已经跑通过的配法，放在首页是为了让人从「有过的解」接着配，而不是从零描述。
-                  </p>
-                  <p>
-                    历史对话留在左侧，是因为投放是连续工作，不是单次提问。整屏的结构是：开口、接住高频、接住现成场景、接住上次没做完的。
-                  </p>
-                </div>
+            <section class="case-section" id="workbench">
+              <div class="case-section-header">
+                <p class="case-index">02 / 04</p>
+                <h2>首页</h2>
+                <p>
+                  为了符合用户习惯，我们首先对标市场上认可度最高的三大平台。三家首页都把输入放在正中，进门就能写。FAST 用同一结构：运营进来直接描述活动，不必先熟悉一套新后台。
+                </p>
+              </div>
+              <p class="case-viz-label">竞品首页</p>
+              <div class="case-grid-3 case-compete-row">
                 <figure class="case-slide">
-                  <img src="../public/works/fast/workbench.png" alt="FAST Agent 工作台：输入、快捷意图与场景方案收在同一屏" />
+                  <span class="case-slide-badge">ChatGPT</span>
+                  <img src="../public/works/fast/compete-chatgpt-ui.png" alt="ChatGPT 首页：极简沉浸式起始页，输入居中" />
+                  <figcaption>起始页极简、沉浸，白底黑字，注意力集中在输入。不必先理解导航，直接表达需求。</figcaption>
+                </figure>
+                <figure class="case-slide">
+                  <span class="case-slide-badge">Gemini</span>
+                  <img src="../public/works/fast/compete-gemini-ui.png" alt="Gemini 首页：弥散极简，输入居中" />
+                  <figcaption>弥散风格加极简，视觉更舒适。除进入页的色块外，结构和 GPT 接近：进门就能写。</figcaption>
+                </figure>
+                <figure class="case-slide">
+                  <span class="case-slide-badge">Claude</span>
+                  <img src="../public/works/fast/compete-claude-ui.png" alt="Claude 首页：扁平工业风，输入下带快捷入口" />
+                  <figcaption>更理性、工业，扁平化，面向高阶生产力用户。问候语加居中输入，下方放任务快捷入口。</figcaption>
                 </figure>
               </div>
-            </section>
-
-            <section class="case-section" id="language">
-              <div class="case-section-header">
-                <p class="case-index">03 / 05</p>
-                <h2>先做一套优先级，再让两张表说同一种话</h2>
-                <p>
-                  如果排期用审核色、活动表用另一套列，Agent 和人对的仍是两套世界。人在对话里说「这是 S 级」，转到排期却先看见绿和橙，转到名单又要在名称和等级列之间跳视。
-                </p>
-                <p>
-                  所以先收成四个标签。S / A / B / C 不是装饰，是后面两页共用的语言：占位多重、扫表先看谁，都读这一套。
-                </p>
-                <div class="case-inline-fig">
-                  <img src="../public/works/fast/level-tags.png" alt="S、A、B、C 四级等级标签" width="148" />
-                  <p>同一组件进排期左栏，也贴在活动名称左侧。下面两页是这套语言的落地，不是两张互不相干的改版。</p>
+              <p class="case-viz-label">工作台结构</p>
+              <figure class="case-slide">
+                <img src="../public/works/fast/workbench.png" alt="FAST 工作台首页：对话框、猫猫与场景方案" />
+              </figure>
+              <p class="case-viz-label">首页排布原因与优势</p>
+              <div class="case-grid-3">
+                <div class="case-card">
+                  <h3>对话</h3>
+                  <p>输入框放在页面中心。进来写主题、人群、时间和目标即可，不用先理解后台层级。</p>
+                </div>
+                <div class="case-card">
+                  <h3>猫猫</h3>
+                  <p>配投放要长时间对着屏幕。猫放在输入框上，给视线一个落点，也让连续工作有一点停顿。</p>
+                </div>
+                <div class="case-card">
+                  <h3>场景方案</h3>
+                  <p>下方卡片按近期使用归纳高频活动，没想好主题时可以先点一张。点开后带出提示词示例，方便还不会写的人上手。</p>
                 </div>
               </div>
             </section>
 
             <section class="case-section" id="schedule">
-              <div class="case-pair">
-                <div class="case-pair-copy">
-                  <p class="case-index">04 / 05</p>
-                  <h2>排期要回答的是谁占着、会不会撞节</h2>
-                  <p>
-                    旧版用绿和橙报审核状态。流程看得见，决策看不见：这段资源该不该给它、它和节日叠不叠，仍然要进详情。
-                  </p>
-                  <p>
-                    改的时候把「过了没有」让到后面。左栏改读等级，表头加上下一个节日。运营在轴上先完成的判断，是占位和节奏，不是审批进度。
-                  </p>
+              <div class="case-section-header">
+                <p class="case-index">03 / 04</p>
+                <h2>排期：AI coding 设计项目的全流程体验</h2>
+                <p>
+                  先跑通线上业务，再从设计标准与视觉感受来进行迭代。
+                </p>
+              </div>
+
+              <p class="case-viz-label">改之前</p>
+              <div class="case-pair-media">
+                <figure class="case-slide">
+                  <span class="case-slide-badge">现网</span>
+                  <img src="../public/works/fast/schedule-before.png" alt="资源位排期改版前：审核色块占中心，表格挤、颜色不统一" />
+                </figure>
+                <div class="case-pair-notes">
+                  <div class="case-card">
+                    <h3>两大色块</h3>
+                    <p>审核通过、审核中占住视觉中心，几乎不帮人做排期判断。</p>
+                  </div>
+                  <div class="case-card">
+                    <h3>表格乱</h3>
+                    <p>行距、对齐和条带长度都不稳，扫一个月要对很久。</p>
+                  </div>
+                  <div class="case-card">
+                    <h3>颜色不统一</h3>
+                    <p>审核绿、橙和条带抢视线，等级看不出来。</p>
+                  </div>
                 </div>
-                <div class="case-compare">
-                  <figure class="case-slide">
-                    <img src="../public/works/fast/schedule-before.png" alt="资源位排期改版前，条带按审核状态上色" />
-                    <figcaption>当时：状态色主导。周末和今日被标出来，级别仍藏在详情里。</figcaption>
-                  </figure>
-                  <figure class="case-slide">
-                    <img src="../public/works/fast/schedule-after.png" alt="资源位排期改版后，等级与节日进入时间轴" />
-                    <figcaption>现在：等级进左栏，节日进表头。轴上先看见这是什么级别、会不会撞节。</figcaption>
-                  </figure>
+              </div>
+
+              <p class="case-viz-label is-lg">竞品分析</p>
+              <figure class="case-collage">
+                <img src="../public/works/fast/compete-schedule-collage.png" alt="资源位排期竞品分析：从产品分析到 Planner、Asana、Monday、板栗看板、Float 与总结" />
+              </figure>
+
+              <p class="case-viz-label is-lg">规范整理</p>
+              <figure class="case-slide">
+                <img src="../public/works/fast/spec-126.png" alt="亮蓝品牌版设计规范：颜色、字号、圆角与 S/A/B/C 等级标签" />
+                <figcaption>先按照和项目组商量的结果给视觉设定规范，方便后续统一。在这个基础上，我们再进行迭代和尝试，不完全拘泥于规范，但又和规范统一、融合。</figcaption>
+              </figure>
+
+              <p class="case-viz-label">改之后</p>
+              <figure class="case-slide">
+                <span class="case-slide-badge">改后</span>
+                <img src="../public/works/fast/schedule-after.png" alt="资源位排期改版后：等级进左栏，节日进表头" />
+                <figcaption>色块让出中心。调整色块的作用和形成的视觉效果，反复尝试得到最终活动的配色；由设计提出添加对于节日的突出和便捷跳转方式，便于运营查看。</figcaption>
+              </figure>
+
+              <p class="case-viz-label">测试：标签颜色区分度不够</p>
+              <div class="case-grid-2">
+                <div class="case-card">
+                  <p>上线后根据产品测试反馈，标签的颜色对比度不明显，需要进行迭代，借助 AI 出具方案，并在方案基础上进行调整，得到新一版标签配色方案。</p>
                 </div>
+                <div class="case-card">
+                  <p>此外，统一了全局标签规范，并将活动等级名称与资源位区分开。</p>
+                </div>
+              </div>
+              <div class="case-tags-board">
+                <img src="../public/works/fast/level-tags.png" alt="测试后调整的 S、A、B、C 四级等级标签" />
+              </div>
+              <div class="case-path" aria-label="从代码到最终稿">
+                <div class="case-path-node">代码</div>
+                <div class="case-path-edge">
+                  <span>AI</span>
+                  <span aria-hidden="true">→</span>
+                </div>
+                <div class="case-path-node">设计稿</div>
+                <div class="case-path-edge">
+                  <span>设计师</span>
+                  <span aria-hidden="true">→</span>
+                </div>
+                <div class="case-path-node">迭代设计方案</div>
+                <div class="case-path-edge">
+                  <span>AI</span>
+                  <span aria-hidden="true">→</span>
+                </div>
+                <div class="case-path-node">线上代码</div>
+                <div class="case-path-edge">
+                  <span>设计师 + AI</span>
+                  <span aria-hidden="true">→</span>
+                </div>
+                <div class="case-path-node">最终稿</div>
+              </div>
+
+              <div class="case-card">
+                <h3>总结</h3>
+                <p>通过实际项目进行 AI coding 能力的锻炼，同时体验 AI 实际项目的全流程，过程中不断与产品和研发进行沟通，最后得到高质量的 AI 作品。</p>
               </div>
             </section>
 
             <section class="case-section" id="activity">
-              <div class="case-pair">
-                <div class="case-pair-copy">
-                  <p class="case-index">05 / 05</p>
-                  <h2>扫名单时，名字就应该带着优先级</h2>
-                  <p>
-                    活动表是另一处要对齐的地方。旧表把预算等级、节日等级拆成两列，信息一点没少，视线却在名称和标签之间来回跳——这和排期旧版是同一个错：优先级没有长在主对象上。
-                  </p>
-                  <p>
-                    标签贴到名称左侧之后，一行的第一眼就是「这是谁、多重」。状态仍用图标色，因为它回答的是流程，不是占位。
-                  </p>
-                </div>
-                <div class="case-compare">
-                  <figure class="case-slide">
-                    <img src="../public/works/fast/activity-before.png" alt="活动管理改版前，等级作为独立列" />
-                    <figcaption>当时：等级是列。扫一行要拼三块——名称、等级、状态。</figcaption>
-                  </figure>
-                  <figure class="case-slide">
-                    <img src="../public/works/fast/activity-after.png" alt="活动管理改版后，等级贴在活动名称左侧" />
-                    <figcaption>现在：名称即优先级。和排期读同一套标签，状态继续当第二眼。</figcaption>
-                  </figure>
+              <div class="case-section-header">
+                <p class="case-index">04 / 04</p>
+                <h2>活动：本身改动空间不大，但是依然存在细节问题</h2>
+                <p>
+                  不能也不用做过多的改动，但是如何满足最便于运营查看的要求是关键。
+                </p>
+              </div>
+
+              <p class="case-viz-label">改之前</p>
+              <div class="case-pair-media">
+                <figure class="case-slide">
+                  <span class="case-slide-badge">现网</span>
+                  <img src="../public/works/fast/activity-before.png" alt="活动管理改版前：等级作为独立列" />
+                </figure>
+                <div class="case-pair-notes">
+                  <div class="case-card">
+                    <h3>登记混乱</h3>
+                    <p>不同的等级混在一起，难以辨别背后含义。</p>
+                  </div>
+                  <div class="case-card">
+                    <h3>视觉中心混乱</h3>
+                    <p>不同的颜色、不同长度的内容，意义不明的等级让人无法一眼发现重点是哪些列。</p>
+                  </div>
+                  <div class="case-card">
+                    <h3>间隔混乱</h3>
+                    <p>内容间隔导致画面有些地方过于拥挤，有些又很奇怪的稀疏。</p>
+                  </div>
                 </div>
               </div>
-              <div class="case-quote">
-                三张界面要一起成立：开口时不用从零组织语言，看日历时先看见级别和节日，扫名单时名字自己带着优先级。少的不是功能，是同一种结构。
+
+              <p class="case-viz-label is-lg">竞品分析</p>
+              <div class="case-section-header">
+                <p>参考市面上使用表格页面以及专注于运营的页面，进行视觉上的再调整，以期符合运营同学的习惯和工作流程。</p>
+              </div>
+              <figure class="case-collage">
+                <img src="../public/works/fast/compete-activity-collage.png" alt="活动管理竞品分析：从产品分析到 Cvent、Asana、钉钉与视觉化投放表" />
+              </figure>
+
+              <p class="case-viz-label">改之后</p>
+              <figure class="case-slide">
+                <span class="case-slide-badge">改后</span>
+                <img src="../public/works/fast/activity-after.png" alt="活动管理改版后：等级贴在活动名称左侧" />
+                <figcaption>整体更加整齐有序；颜色突出符合运营同学的使用习惯；删除冗余的列，内容更加精简。</figcaption>
+              </figure>
+
+              <div class="case-card">
+                <h3>总结</h3>
+                <p>
+                  这是一次设计全栈的体验，从先行只跑通功能进行初步测试，到最后的视觉呈现效果。本人作为设计师不光进行 AI coding 的能力学习，同时也更加认识到 AI 对于设计真正起到的作用。提效是一方面，身为设计师更能明显感知到我们的页面具体需要什么，生成的设计稿哪里不对、不符合我们的系统框架和项目逻辑。我会以这个项目为蓝本继续探索 AI 下的产品和设计。当设计不单单是设计，也许我们做到的更多、更好。
+                </p>
               </div>
             </section>
 
             <div class="contact-footer">
               <div>
                 <h2>欢迎联系</h2>
-                <p>FAST 案例单独预览中。如需完整过程文件，可以直接来信。</p>
+                <p>作品持续更新中。如需完整过程文件，可以直接来信。</p>
               </div>
               <a class="btn btn-solid" href="mailto:18879210025@163.com">发送邮件</a>
             </div>
