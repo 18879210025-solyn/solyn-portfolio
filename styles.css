@@ -1332,23 +1332,28 @@ img {
 }
 
 /* Homepage mid motion */
+html:has(.home-page),
 body:has(.home-page) {
   background: #f1f5f8;
 }
 
-.app-shell,
-.main,
-.content {
+.app-shell {
   position: relative;
   z-index: 1;
+  background: transparent;
 }
 
 .flow-bg {
+  display: none;
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
+}
+
+body:has(.home-page) .flow-bg {
+  display: block;
 }
 
 .flow-blob {

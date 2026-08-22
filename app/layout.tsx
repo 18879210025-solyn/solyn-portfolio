@@ -23,6 +23,12 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body className={notoSansSC.className}>
+        <div className="flow-bg" aria-hidden="true">
+          <span className="flow-blob flow-blob-a" />
+          <span className="flow-blob flow-blob-b" />
+          <span className="flow-blob flow-blob-c" />
+          <span className="flow-blob flow-blob-d" />
+        </div>
         <div className="app-shell">
           <Sidebar />
           <div className="main">

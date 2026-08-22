@@ -41,12 +41,6 @@ function SkillCard({ title, items }: { title: string; items: string }) {
 export default function HomePage() {
   return (
     <div className="home-page">
-      <div className="flow-bg" aria-hidden="true">
-        <span className="flow-blob flow-blob-a" />
-        <span className="flow-blob flow-blob-b" />
-        <span className="flow-blob flow-blob-c" />
-        <span className="flow-blob flow-blob-d" />
-      </div>
       <div className="hero-name">
         方宇凌 Solyn<span className="en">（英文名）</span>
       </div>
