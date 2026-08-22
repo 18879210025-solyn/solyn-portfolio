@@ -2,21 +2,21 @@
 
 import { useEffect } from "react";
 
+const RISE_TARGETS =
+  ".home-page .hero-name, .home-page .cv-row, .home-page .statement-section, .home-page .projects-section";
+
 export function HomeMotion() {
   useEffect(() => {
-    let cancelled = false;
+    const nodes = document.querySelectorAll<HTMLElement>(RISE_TARGETS);
+    nodes.forEach((el) => {
+      el.style.animation = "none";
+    });
     const frame = requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        if (!cancelled) {
-          document.documentElement.classList.add("motion-ready");
-        }
+      nodes.forEach((el) => {
+        el.style.animation = "";
       });
     });
-    return () => {
-      cancelled = true;
-      cancelAnimationFrame(frame);
-      document.documentElement.classList.remove("motion-ready");
-    };
+    return () => cancelAnimationFrame(frame);
   }, []);
 
   return null;
