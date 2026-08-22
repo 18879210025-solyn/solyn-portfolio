@@ -16,12 +16,6 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body>
-        <div className="flow-bg" aria-hidden="true">
-          <div className="flow-blob flow-blob-a" />
-          <div className="flow-blob flow-blob-b" />
-          <div className="flow-blob flow-blob-c" />
-          <div className="flow-blob flow-blob-d" />
-        </div>
         <div className="app-shell">
           <Sidebar />
           <div className="main">

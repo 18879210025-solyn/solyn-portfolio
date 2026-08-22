@@ -1,5 +1,6 @@
 import Image from "@/components/Image";
 import Link from "next/link";
+import { FlowBg } from "@/components/FlowBg";
 import { HomeMotion } from "@/components/HomeMotion";
 import { profile } from "@/data/profile";
 
@@ -42,6 +43,7 @@ function SkillCard({ title, items }: { title: string; items: string }) {
 export default function HomePage() {
   return (
     <div className="home-page">
+      <FlowBg />
       <HomeMotion />
       <div className="hero-name">
         方宇凌 Solyn<span className="en">（英文名）</span>

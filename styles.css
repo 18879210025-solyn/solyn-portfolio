@@ -1353,103 +1353,13 @@ body:has(.home-page) .content {
 }
 
 .flow-bg {
-  display: none;
   position: fixed;
   inset: 0;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
   z-index: 0;
-  overflow: hidden;
-  background: #f1f5f8;
-}
-
-body:has(.home-page) .flow-bg {
   display: block;
-}
-
-.flow-blob {
-  display: block;
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(90px);
-  opacity: 0.95;
-  will-change: transform;
-}
-
-.flow-blob-a {
-  width: 58vmax;
-  height: 48vmax;
-  left: -18%;
-  top: -22%;
-  background: #dde9ff;
-  animation: blob-a 14s ease-in-out infinite;
-}
-
-.flow-blob-b {
-  width: 46vmax;
-  height: 58vmax;
-  right: -16%;
-  top: -18%;
-  background: #e3edff;
-  animation: blob-b 18s ease-in-out infinite;
-}
-
-.flow-blob-c {
-  width: 62vmax;
-  height: 40vmax;
-  left: 8%;
-  bottom: -28%;
-  background: #edf4ff;
-  animation: blob-c 16s ease-in-out infinite;
-}
-
-.flow-blob-d {
-  width: 36vmax;
-  height: 50vmax;
-  left: 38%;
-  top: 18%;
-  background: #f4f7fb;
-  opacity: 0.9;
-  animation: blob-d 12s ease-in-out infinite;
-}
-
-@keyframes blob-a {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(22vw, 16vh, 0) scale(1.18);
-  }
-}
-
-@keyframes blob-b {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(-20vw, 12vh, 0) scale(1.14);
-  }
-}
-
-@keyframes blob-c {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(16vw, -14vh, 0) scale(1.12);
-  }
-}
-
-@keyframes blob-d {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(-18vw, -10vh, 0) scale(1.2);
-  }
 }
 
 @keyframes rise {
