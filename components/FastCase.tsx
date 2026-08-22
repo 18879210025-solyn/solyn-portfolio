@@ -167,7 +167,7 @@ export function FastCase() {
           />
           <Slide
             badge="Gemini"
-            src="/works/fast/compete-gemini-ui.png"
+            src="/works/fast/compete-gemini-ui.jpg"
             alt="Gemini 首页：弥散极简，输入居中"
             caption="弥散风格加极简，视觉更舒适。除进入页的色块外，结构和 GPT 接近：进门就能写。"
           />
@@ -232,7 +232,7 @@ export function FastCase() {
         <p className="case-viz-label is-lg">竞品分析</p>
         <figure className="case-collage">
           <Image
-            src="/works/fast/compete-schedule-collage.png"
+            src="/works/fast/compete-schedule-collage.jpg"
             alt="资源位排期竞品分析：从产品分析到 Planner、Asana、Monday、板栗看板、Float 与总结"
             width={2590}
             height={5045}
@@ -345,7 +345,7 @@ export function FastCase() {
         </div>
         <figure className="case-collage">
           <Image
-            src="/works/fast/compete-activity-collage.png"
+            src="/works/fast/compete-activity-collage.jpg"
             alt="活动管理竞品分析：从产品分析到 Cvent、Asana、钉钉与视觉化投放表"
             width={2590}
             height={3838}

@@ -5,7 +5,7 @@ const chapters = [
   { id: "overview", n: "01", label: "概述" },
   { id: "problem", n: "02", label: "缺口" },
   { id: "trigger", n: "03", label: "双触发" },
-  { id: "journey", n: "04", label: "五段救援" },
+  { id: "journey", n: "04", label: "救援流程" },
   { id: "system", n: "05", label: "服务系统" },
   { id: "dispatch", n: "06", label: "调度产品" },
   { id: "market", n: "07", label: "市场" },
@@ -37,7 +37,7 @@ export function VelocareCase() {
         <h1>无人机</h1>
         <p className="en">VeloCare · 城市低空急救</p>
         <p>
-          把地面急救从「和交通赛跑」做成可触发、可调度、可交接的空中转运。我跟完整流程：从救援缺口、服务系统、调度产品，到湾区市场和商业化。
+          把地面急救从「和交通赛跑」做成可触发、可调度、可交接的空中转运。本人作为项目负责人，负责全项目的任务分配、流程跟进、各组协调与对接、项目排期以及最后的汇报，此外，我同时负责产品的部分工作。
         </p>
         <dl className="case-meta-row">
           <div>
@@ -66,13 +66,13 @@ export function VelocareCase() {
       <section className="case-section" id="overview">
         <div className="case-section-header">
           <p className="case-index">01 / 09</p>
-          <h2>概述：一键求助，空中送到对的医院</h2>
+          <h2>概述：城市空中急救中心的系统搭建</h2>
           <p>
-            VeloCare 是城市低空急救服务。产品不是一架飞机，而是从告警到床旁交接的整条救援网。目标 20 分钟到达，单次约 $191，医院与政府先行。下方飞行器为概念可视化。
+            VeloCare是一个集成低空救护飞行器、健康监测设备与云端调度系统的城市低空医疗救援网络。
           </p>
         </div>
         <Slide
-          src="/works/velocare/hero.png?v=ppt"
+          src="/works/velocare/hero.jpg?v=ppt"
           alt="VeloCare LEMS 产品介绍：一键求助、智能调度、空中直达医院"
           caption="AeroGuard 1.0 作为服务载体：一键求助 → AI 调度 → 空中直达医院。"
         />
@@ -88,7 +88,7 @@ export function VelocareCase() {
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/pain.png?v=ppt"
+            src="/works/velocare/pain.jpg?v=ppt"
             alt="三类痛点：距离与地形、拥堵与孤岛、就近与专科"
             caption="距离与地形、拥堵与孤岛、就近与专科。目标是对的医院，而不只是最近的医院。"
           />
@@ -105,7 +105,7 @@ export function VelocareCase() {
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/triggers.png?v=ppt"
+            src="/works/velocare/triggers.jpg?v=ppt"
             alt="静默告警与主动呼叫两套触发"
             caption="Silent Alarm：可穿戴自动呼叫。Active Call：App 一键求助。入口不同，后面的调度和交接共用。"
           />
@@ -115,15 +115,15 @@ export function VelocareCase() {
       <section className="case-section" id="journey">
         <div className="case-section-header">
           <p className="case-index">04 / 09</p>
-          <h2>五段救援：从危机到床旁交接</h2>
+          <h2>救援流程：从危机到床旁交接</h2>
           <p>
             产品价值不在单次起飞，而在把城市急救从不可控的路况，变成可管理的五段流程。
           </p>
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/journey.png?v=ppt"
-            alt="五段救援：危机触发、智能调度、到达换乘、空中监护、院端交接"
+            src="/works/velocare/journey.jpg?v=ppt"
+            alt="救援流程：危机触发、智能调度、到达换乘、空中监护、院端交接"
             caption="危机触发 → 智能调度 → 到达换乘 → 空中监护 → 院端 bed-to-bed 交接。"
           />
         </div>
@@ -139,18 +139,18 @@ export function VelocareCase() {
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/system.png?v=ppt"
+            src="/works/velocare/system.jpg?v=ppt"
             alt="服务系统图：信息流、物资流与资金流"
             caption="利益相关者系统图：现场、机队、调度、医院之间的信息流、物资流和资金流。"
           />
         </div>
         <Slide
-          src="/works/velocare/blueprint.png?v=ppt"
+          src="/works/velocare/blueprint.jpg?v=ppt"
           alt="服务蓝图：救援前、中、后的前台与后台"
           caption="服务蓝图：救援前调度、救援中航路与监护、救援后归档，都落在同一套平台上。"
         />
         <Slide
-          src="/works/velocare/dispatch.png?v=ppt"
+          src="/works/velocare/dispatch.jpg?v=ppt"
           alt="实时智能调度：空中 ETA 与地面 ETA 比较后派出"
           caption="调度决策：同时算空中和地面 ETA，谁快派谁；天气和地形作为硬约束。"
         />
@@ -166,14 +166,14 @@ export function VelocareCase() {
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/ui.png?v=ppt"
+            src="/works/velocare/ui.jpg?v=ppt"
             alt="调度中心主界面与任务归档"
             caption="主界面：任务列表 + 实时地图。归档：总时长、航程、生命体征和院端交接记录。"
           />
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/logic.png?v=ppt"
+            src="/works/velocare/logic.jpg?v=ppt"
             alt="调度中心交互逻辑：告警、接受、确认、执行、归档"
             caption="闭环：告警弹窗 → 接受 / 误报 → 资源确认 → 执行监控 → 归档出报告。"
           />
@@ -189,18 +189,18 @@ export function VelocareCase() {
           </p>
         </div>
         <Slide
-          src="/works/velocare/tam.png?v=ppt"
+          src="/works/velocare/tam.jpg?v=ppt"
           alt="全球 UAM 增长与湾区 PEST 分析"
           caption="全球 UAM 2023–2030 从 $1.35B 到 $28.6B。湾区有政策口子、产业链和 700+ 航路。"
         />
         <Slide
-          src="/works/velocare/swot.png?v=ppt"
+          src="/works/velocare/swot.jpg?v=ppt"
           alt="TAM SAM SOM 市场分层"
           caption="TAM 是中国低空经济，SAM 是城市急救与 HEMS，SOM 先做政府和医疗机构。"
         />
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/strategy.png?v=ppt"
+            src="/works/velocare/strategy.jpg?v=ppt"
             alt="SWOT：垂直起降与政策窗口，对冲适航与起降限制"
             caption="优势是垂直起降和自研调度；窗口是低空政策与地面急救低效。风险集中在动力失效和城市起降限制。"
           />
@@ -217,7 +217,7 @@ export function VelocareCase() {
         </div>
         <div className="case-grid-1">
           <Slide
-            src="/works/velocare/compare.png?v=ppt"
+            src="/works/velocare/compare.jpg?v=ppt"
             alt="三种医疗救援工具的成本对比：直升机、eVTOL、地面救护车"
             caption="单次成本 $191，对标直升机 $10,375、救护车 $312.50。采购价介于两者之间。"
           />
@@ -233,12 +233,12 @@ export function VelocareCase() {
           </p>
         </div>
         <Slide
-          src="/works/velocare/canvas.png?v=ppt"
+          src="/works/velocare/canvas.jpg?v=ppt"
           alt="商业画布：问题、客户、方案与收支"
           caption="商业画布：20 分钟到达、屋顶级起降、空地同一平台。渠道走医院和城市应急体系。"
         />
         <Slide
-          src="/works/velocare/gtm.png?v=ppt"
+          src="/works/velocare/gtm.jpg?v=ppt"
           alt="GTM：深圳试点后逐城复制"
           caption="先选定一个成功试点城市，从深圳起步，再逐城推广到全国。"
         />

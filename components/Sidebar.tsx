@@ -26,6 +26,7 @@ export function Sidebar() {
             <Link
               key={item.label}
               href={item.href}
+              prefetch={false}
               className={`sidebar-item${active ? " active" : ""}`}
             >
               <span className="sidebar-icon">

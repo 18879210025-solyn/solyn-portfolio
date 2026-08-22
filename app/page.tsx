@@ -1,5 +1,6 @@
 import Image from "@/components/Image";
 import Link from "next/link";
+import { HomeMotion } from "@/components/HomeMotion";
 import { profile } from "@/data/profile";
 
 function EduCard({
@@ -41,6 +42,7 @@ function SkillCard({ title, items }: { title: string; items: string }) {
 export default function HomePage() {
   return (
     <div className="home-page">
+      <HomeMotion />
       <div className="hero-name">
         方宇凌 Solyn<span className="en">（英文名）</span>
       </div>
@@ -104,14 +106,14 @@ export default function HomePage() {
       <div className="projects-section">
         <div className="section-title">项目</div>
         <div className="project-strip">
-          <Link href="/fast" className="project-item project-item-fast">
-            <Image src="/figma/fast-logo.png?v=clear" alt="FAST" width={70} height={67} />
+          <Link href="/fast" className="project-item project-item-fast" prefetch={false}>
+            <Image src="/figma/fast-logo.png?v=sm" alt="FAST" width={70} height={67} />
           </Link>
           <div className="bottom-line">
             <Image src="/figma/bottom-line.svg" alt="" width={1228} height={146} />
           </div>
           <div className="project-items">
-            <Link href="/works/usv" className="project-item project-item-usv">
+            <Link href="/works/usv" className="project-item project-item-usv" prefetch={false}>
               <Image
                 src="/figma/project-usv.png?v=opt"
                 alt="无人艇"
@@ -120,23 +122,23 @@ export default function HomePage() {
                 unoptimized
               />
             </Link>
-            <Link href="/works/feige" className="project-item project-item-phone">
+            <Link href="/works/feige" className="project-item project-item-phone" prefetch={false}>
               <Image
-                src="/figma/project-uav-color.png?v=color"
+                src="/figma/project-uav-color.png?v=sm"
                 alt="飞鸽"
                 width={37}
                 height={80}
               />
             </Link>
-            <Link href="/works/feige" className="project-item project-item-fp">
+            <Link href="/works/feige" className="project-item project-item-fp" prefetch={false}>
               <Image
-                src="/figma/project-fp-color.png?v=clean"
+                src="/figma/project-fp-color.png?v=sm"
                 alt="飞鸽"
                 width={150}
                 height={57}
               />
             </Link>
-            <Link href="/works/velocare" className="project-item project-item-drone">
+            <Link href="/works/velocare" className="project-item project-item-drone" prefetch={false}>
               <Image
                 src="/figma/project-drone.png?v=opt"
                 alt="无人机"

@@ -37,7 +37,7 @@ export const works: Work[] = [
     summary: "背包与帐篷融合：折叠转化、模块化营地，以及飞鸽骑行露营服务系统。",
     year: "2024",
     tags: ["产品设计", "折叠结构", "服务系统"],
-    cover: "/works/tent/renders.png",
+    cover: "/works/tent/renders.jpg",
     href: "/works/tent",
   },
 ];

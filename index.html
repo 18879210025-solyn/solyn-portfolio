@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>方宇凌 Solyn</title>
     <meta name="description" content="方宇凌的个人作品集首页" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;600;700;900&family=Playfair+Display:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -156,7 +150,7 @@
               <h2 class="section-title">项目</h2>
               <div class="project-strip">
                 <a class="project-item project-item-fast" href="fast/index.html">
-                  <img src="public/figma/fast-logo.png?v=clear" alt="FAST" width="70" height="67" />
+                  <img src="public/figma/fast-logo.png?v=sm" alt="FAST" width="70" height="67" />
                 </a>
                 <div class="bottom-line">
                   <img src="public/figma/bottom-line.svg" alt="" width="1228" height="148" />
@@ -166,10 +160,10 @@
                     <img src="public/figma/project-usv.png" alt="无人艇" width="140" height="85" />
                   </a>
                   <a class="project-item project-item-phone" href="works/feige.html">
-                    <img src="public/figma/project-uav-color.png?v=color" alt="飞鸽启动页" width="37" height="80" />
+                    <img src="public/figma/project-uav-color.png?v=sm" alt="飞鸽启动页" width="37" height="80" />
                   </a>
                   <a class="project-item project-item-fp" href="works/feige.html">
-                    <img src="public/figma/project-fp-color.png?v=clean" alt="飞鸽" width="150" height="57" />
+                    <img src="public/figma/project-fp-color.png?v=sm" alt="飞鸽" width="150" height="57" />
                   </a>
                   <a class="project-item project-item-drone" href="works/velocare.html">
                     <img src="public/figma/project-drone.png" alt="无人机 VeloCare" width="108" height="62" />
@@ -181,5 +175,10 @@
         </main>
       </div>
     </div>
+    <script>
+      requestAnimationFrame(function () {
+        document.documentElement.classList.add("motion-ready");
+      });
+    </script>
   </body>
 </html>

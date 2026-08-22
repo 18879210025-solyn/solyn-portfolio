@@ -72,7 +72,7 @@ export function TentCase() {
           </p>
         </div>
         <Slide
-          src="/works/tent/renders.png?v=ppt"
+          src="/works/tent/renders.jpg?v=ppt"
           alt="帐篷形态与背包形态效果"
           caption="展开是带天幕的营地，收起是能背、能提的日常包。同一件东西服务出门和日常。"
         />
@@ -93,7 +93,7 @@ export function TentCase() {
             caption="社会、个人、周围观察，结论都是装备门槛，不是露营没人喜欢。"
           />
           <Slide
-            src="/works/tent/cycling.png?v=ppt"
+            src="/works/tent/cycling.jpg?v=ppt"
             alt="城市骑游成为短途出行新方式"
             caption="长途受限之后，城市骑游成了轻旅行。后面的折叠和模块都按这个节奏。"
           />
@@ -110,18 +110,18 @@ export function TentCase() {
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/tent/persona1.png?v=ppt"
+            src="/works/tent/persona1.jpg?v=ppt"
             alt="用户画像：大学生小桃"
             caption="小桃要说走就走。机会点是装备能当日常包，不然买了进柜子。"
           />
           <Slide
-            src="/works/tent/persona2.png?v=ppt"
+            src="/works/tent/persona2.jpg?v=ppt"
             alt="用户画像：带孩子的上班族天明"
             caption="天明要短途家庭露营。机会点是单人帐能拼，不用另买一套更大的。"
           />
         </div>
         <Slide
-          src="/works/tent/scenes.png?v=ppt"
+          src="/works/tent/scenes.jpg?v=ppt"
           alt="单人、家庭、朋友与城市公园或郊区营地"
           caption="人数和场地会变，基本单元不能变。后面的模块化是从这里来的。"
         />
@@ -137,12 +137,12 @@ export function TentCase() {
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/tent/stakeholders.png?v=ppt"
+            src="/works/tent/stakeholders.jpg?v=ppt"
             alt="利益相关者：品牌、制造、用户、组织方与社会"
             caption="要看的是谁和谁交接：产品连品牌和组织方，系统连用户和组织方。"
           />
           <Slide
-            src="/works/tent/ecosystem.png?v=ppt"
+            src="/works/tent/ecosystem.jpg?v=ppt"
             alt="以飞鸽为例的骑行露营休闲生态服务系统"
             caption="飞鸽不只卖车。用这件产品进露营，同时把管理平台交给组织方。"
           />
@@ -182,23 +182,23 @@ export function TentCase() {
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/tent/fold-choice.png?v=ppt"
+            src="/works/tent/fold-choice.jpg?v=ppt"
             alt="折叠方式：从折纸转向衣物折叠"
             caption="折纸达不到预期，转向衣物的折叠、捆扎、卷曲。"
           />
           <Slide
-            src="/works/tent/fishnet.png?v=ppt"
+            src="/works/tent/fishnet.jpg?v=ppt"
             alt="渔网模型：从背包帐篷结构到有形概念"
             caption="收到有形概念：带天幕的 1–2 人帐，可拼接，可折叠转化。"
           />
         </div>
         <Slide
-          src="/works/tent/storyboard.png?v=ppt"
+          src="/works/tent/storyboard.jpg?v=ppt"
           alt="帐篷到背包的六步折叠"
           caption="底布始终在，六个棱始终露着，才能重新接入骨架。"
         />
         <Slide
-          src="/works/tent/adjust.png?v=ppt"
+          src="/works/tent/adjust.jpg?v=ppt"
           alt="实地展开后对折叠方案的调整"
           caption="实地展开不是整块平面。顶布大于底布，方案在实物上改。"
         />
@@ -214,24 +214,24 @@ export function TentCase() {
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/tent/cmf.png?v=ppt"
+            src="/works/tent/cmf.jpg?v=ppt"
             alt="飞鸽蓝到露营色系的三代迭代"
             caption="一代飞鸽蓝，二代加活力橙，三代用绯色和青色给系统界面。"
           />
           <Slide
-            src="/works/tent/ergo.png?v=ppt"
+            src="/works/tent/ergo.jpg?v=ppt"
             alt="帐篷与背包人机尺寸"
             caption="帐按进出和仰卧净空；包按背负。数字在图里，这里只标原则。"
           />
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/tent/hand.png?v=ppt"
+            src="/works/tent/hand.jpg?v=ppt"
             alt="手绘：背包结构与单双三人天幕俯视"
             caption="单 / 双 / 三帐天幕是同一套单元的拼法，不是三件不同的产品。"
           />
           <Slide
-            src="/works/tent/sketches.png?v=ppt"
+            src="/works/tent/sketches.jpg?v=ppt"
             alt="帐篷与背包有形概念草图"
             caption="帐的展开和包的背负要能互逆，不能各画各的。"
           />
@@ -248,18 +248,18 @@ export function TentCase() {
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/tent/model3d.png?v=ppt"
+            src="/works/tent/model3d.jpg?v=ppt"
             alt="帐篷三维模型与控制尺寸"
             caption="缝制前先锁定尺度，避免布料实验和人机尺寸对不上。"
           />
           <Slide
-            src="/works/tent/materials.png?v=ppt"
+            src="/works/tent/materials.jpg?v=ppt"
             alt="外帐、涂层、内帐、底布材料选择"
             caption="PVC 冬天发脆，排除。留下尼龙外帐、PU 涂层、牛津底、铝合金杆。"
           />
         </div>
         <Slide
-          src="/works/tent/structure.png?v=ppt"
+          src="/works/tent/structure.jpg?v=ppt"
           alt="帐篷与背包结构分析"
           caption="帐的骨架和包的背负分开想，转化时再合回同一块布。"
         />
@@ -275,12 +275,12 @@ export function TentCase() {
         </div>
         <div className="case-grid-2">
           <Slide
-            src="/works/tent/lofi.png?v=ppt"
+            src="/works/tent/lofi.jpg?v=ppt"
             alt="骑行露营系统低保真与跳转逻辑"
             caption="一次出行串起来：设备、出发、营地。"
           />
           <Slide
-            src="/works/tent/hifi.png?v=ppt"
+            src="/works/tent/hifi.jpg?v=ppt"
             alt="飞鸽骑行露营 App 高保真界面"
             caption="色系接 CMF 第三代。这是硬件被用起来的界面，不是另一套飞鸽 App。"
           />
@@ -296,7 +296,7 @@ export function TentCase() {
           </p>
         </div>
         <Slide
-          src="/works/tent/validate.png?v=ppt"
+          src="/works/tent/validate.jpg?v=ppt"
           alt="同学实地折叠与搭建试验"
           caption="验证的价值是找到漏项：底部拼接从「以为有」改成「必须有」。"
         />

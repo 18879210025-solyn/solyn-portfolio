@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
-import { Noto_Sans_SC } from "next/font/google";
 import "./globals.css";
 import { Sidebar } from "@/components/Sidebar";
 import { TopBar } from "@/components/TopBar";
-
-const notoSansSC = Noto_Sans_SC({
-  weight: ["400", "500", "700", "900"],
-  display: "swap",
-  preload: false,
-});
 
 export const metadata: Metadata = {
   title: "方宇凌 Solyn",
@@ -22,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body className={notoSansSC.className}>
+      <body>
         <div className="flow-bg" aria-hidden="true">
           <span className="flow-blob flow-blob-a" />
           <span className="flow-blob flow-blob-b" />
