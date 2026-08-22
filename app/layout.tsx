@@ -17,10 +17,10 @@ export default function RootLayout({
     <html lang="zh-CN">
       <body>
         <div className="flow-bg" aria-hidden="true">
-          <span className="flow-blob flow-blob-a" />
-          <span className="flow-blob flow-blob-b" />
-          <span className="flow-blob flow-blob-c" />
-          <span className="flow-blob flow-blob-d" />
+          <div className="flow-blob flow-blob-a" />
+          <div className="flow-blob flow-blob-b" />
+          <div className="flow-blob flow-blob-c" />
+          <div className="flow-blob flow-blob-d" />
         </div>
         <div className="app-shell">
           <Sidebar />

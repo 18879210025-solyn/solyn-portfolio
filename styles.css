@@ -1359,6 +1359,7 @@ body:has(.home-page) .content {
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
+  background: #f1f5f8;
 }
 
 body:has(.home-page) .flow-bg {
@@ -1366,103 +1367,88 @@ body:has(.home-page) .flow-bg {
 }
 
 .flow-blob {
+  display: block;
   position: absolute;
-  filter: blur(400px);
-  opacity: 0.7;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.95;
+  will-change: transform;
 }
 
 .flow-blob-a {
-  width: 4560px;
-  height: 2460px;
-  left: -72%;
-  top: -55%;
-  border-radius: 71% 29% 44% 56% / 32% 67% 33% 68%;
+  width: 58vmax;
+  height: 48vmax;
+  left: -18%;
+  top: -22%;
   background: #dde9ff;
-  animation: blob-a 21s ease-in-out infinite;
+  animation: blob-a 14s ease-in-out infinite;
 }
 
 .flow-blob-b {
-  width: 2340px;
-  height: 3480px;
-  right: -42%;
-  top: -38%;
-  border-radius: 36% 64% 73% 27% / 61% 18% 82% 39%;
+  width: 46vmax;
+  height: 58vmax;
+  right: -16%;
+  top: -18%;
   background: #e3edff;
-  animation: blob-b 26s ease-in-out infinite;
+  animation: blob-b 18s ease-in-out infinite;
 }
 
 .flow-blob-c {
-  width: 3840px;
-  height: 1920px;
-  left: -22%;
-  bottom: -58%;
-  border-radius: 48% 52% 19% 81% / 41% 74% 26% 59%;
+  width: 62vmax;
+  height: 40vmax;
+  left: 8%;
+  bottom: -28%;
   background: #edf4ff;
-  animation: blob-c 23s ease-in-out infinite;
+  animation: blob-c 16s ease-in-out infinite;
 }
 
 .flow-blob-d {
-  width: 1560px;
-  height: 3000px;
-  left: 28%;
-  top: -22%;
-  border-radius: 84% 16% 63% 37% / 24% 78% 22% 76%;
+  width: 36vmax;
+  height: 50vmax;
+  left: 38%;
+  top: 18%;
   background: #f4f7fb;
-  opacity: 0.85;
-  animation: blob-d 18s ease-in-out infinite;
+  opacity: 0.9;
+  animation: blob-d 12s ease-in-out infinite;
 }
 
 @keyframes blob-a {
-  0% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
-  }
-  35% {
-    transform: translate(90px, 50px) rotate(8deg) scale(1.12);
-  }
-  70% {
-    transform: translate(-40px, 80px) rotate(-5deg) scale(0.94);
-  }
+  0%,
   100% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(22vw, 16vh, 0) scale(1.18);
   }
 }
 
 @keyframes blob-b {
-  0% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
-  }
-  40% {
-    transform: translate(-110px, 30px) rotate(-11deg) scale(1.08);
-  }
-  75% {
-    transform: translate(30px, -70px) rotate(6deg) scale(1.16);
-  }
+  0%,
   100% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-20vw, 12vh, 0) scale(1.14);
   }
 }
 
 @keyframes blob-c {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
   }
   50% {
-    transform: translate(70px, -40px) rotate(-7deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(0deg);
+    transform: translate3d(16vw, -14vh, 0) scale(1.12);
   }
 }
 
 @keyframes blob-d {
-  0% {
-    transform: translate(0, 20px) scale(1);
-  }
-  55% {
-    transform: translate(-60px, -50px) scale(1.2);
-  }
+  0%,
   100% {
-    transform: translate(0, 20px) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-18vw, -10vh, 0) scale(1.2);
   }
 }
 
@@ -1574,7 +1560,6 @@ body:has(.home-page) .flow-bg {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .flow-blob,
   .home-page .hero-name,
   .home-page .cv-row,
   .home-page .statement-section,
