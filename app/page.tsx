@@ -79,19 +79,25 @@ export default function HomePage() {
           <div className="skill-rows">
             <div className="skill-row">
               <SkillCard
-                title="编程与开发"
-                items="Python、C++、MATLAB、R Studio、Arduino"
+                title="AI辅助开发"
+                items="能够借助 AI Coding 工具完成前端页面实现、基础功能验证、代码检查与交付。"
               />
               <SkillCard
-                title="设计工具"
-                items="Figma、Adobe Photoshop、Illustrator、SolidWorks、Rhino、KeyShot、AutoCAD"
+                title="编程基础"
+                items="修读 Python、C++及互联网编程课程，能够理解基础代码逻辑与常见数据结构。"
               />
             </div>
             <div className="skill-row">
               <SkillCard
+                title="设计工具"
+                items="Figma、Adobe Photoshop、Illustrator、SolidWorks、Rhino、KeyShot、AutoCAD"
+              />
+              <SkillCard
                 title="产品与系统"
                 items="用户体验设计、硬件原型开发、产品需求文档撰写、商业模式设计"
               />
+            </div>
+            <div className="skill-row">
               <SkillCard title="语言" items="英语（雅思 7.0）" />
             </div>
           </div>

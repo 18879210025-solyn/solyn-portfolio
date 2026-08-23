@@ -72,7 +72,7 @@ export const profile: Profile = {
   ],
   skillGroups: [
     {
-      title: "编程与开发",
+      title: "编程基础",
       skills: [
         { name: "Python", level: 70 },
         { name: "C++", level: 62 },

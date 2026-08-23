@@ -304,10 +304,10 @@ img {
   gap: 10px;
 }
 
-.skill-row {
-  display: flex;
+.skill-rows .skill-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
-  flex-wrap: wrap;
 }
 
 .skill-card {
@@ -317,6 +317,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  min-width: 0;
 }
 
 .skill-card h4 {
@@ -329,7 +330,8 @@ img {
   font-size: 12px;
   font-weight: 300;
   color: var(--text);
-  white-space: nowrap;
+  white-space: normal;
+  line-height: 1.55;
 }
 
 .statement-card {
