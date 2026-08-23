@@ -468,14 +468,18 @@ img {
 .case-hero h1 {
   font-size: 48px;
   font-weight: 900;
+  font-style: italic;
   letter-spacing: -0.04em;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 .case-hero .en {
-  font-size: 18px;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
   color: var(--text-muted);
-  font-weight: 500;
+  margin-left: 6px;
+  letter-spacing: 0;
 }
 
 .case-hero p {
@@ -1252,6 +1256,7 @@ body:has(.home-page) .content {
   inset: 0;
   width: 100%;
   height: 100%;
+  opacity: 0.75;
   pointer-events: none;
   z-index: 0;
   display: block;
@@ -1306,6 +1311,57 @@ body:has(.home-page) .content {
 
 .home-page .projects-section {
   animation-delay: 0.55s;
+}
+
+.case-page .case-hero,
+.case-page .case-section,
+.case-page .contact-footer {
+  animation: rise 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+.case-page .case-hero {
+  animation-duration: 1.4s;
+  animation-delay: 0.06s;
+}
+
+.case-page .case-section:nth-of-type(1) {
+  animation-delay: 0.14s;
+}
+
+.case-page .case-section:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+
+.case-page .case-section:nth-of-type(3) {
+  animation-delay: 0.26s;
+}
+
+.case-page .case-section:nth-of-type(4) {
+  animation-delay: 0.32s;
+}
+
+.case-page .case-section:nth-of-type(5) {
+  animation-delay: 0.38s;
+}
+
+.case-page .case-section:nth-of-type(6) {
+  animation-delay: 0.44s;
+}
+
+.case-page .case-section:nth-of-type(7) {
+  animation-delay: 0.5s;
+}
+
+.case-page .case-section:nth-of-type(8) {
+  animation-delay: 0.56s;
+}
+
+.case-page .case-section:nth-of-type(9) {
+  animation-delay: 0.62s;
+}
+
+.case-page .contact-footer {
+  animation-delay: 0.7s;
 }
 
 .home-page .project-item {
@@ -1369,7 +1425,24 @@ body:has(.home-page) .content {
   .home-page .cv-row,
   .home-page .statement-section,
   .home-page .projects-section,
+  .case-page .case-hero,
+  .case-page .case-section,
+  .case-page .contact-footer,
   .home-page .project-item {
     animation: none !important;
   }
+}
+
+/* Case pages background tint: homepage tone at 0.2 */
+body:has(.case-page)::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 16% 20%, rgba(180, 210, 255, 0.2) 0%, rgba(180, 210, 255, 0) 46%),
+    radial-gradient(circle at 84% 16%, rgba(160, 198, 255, 0.2) 0%, rgba(160, 198, 255, 0) 42%),
+    radial-gradient(circle at 46% 84%, rgba(200, 222, 255, 0.2) 0%, rgba(200, 222, 255, 0) 50%),
+    radial-gradient(circle at 64% 42%, rgba(230, 238, 250, 0.2) 0%, rgba(230, 238, 250, 0) 34%);
 }
