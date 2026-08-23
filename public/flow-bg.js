@@ -40,8 +40,8 @@
       var y = (blob.y + Math.cos(t * blob.sy) * blob.ay) * h;
       var radius = blob.r * Math.max(w, h);
       var gradient = ctx.createRadialGradient(x, y, 0, x, y, radius);
-      gradient.addColorStop(0, "rgba(" + blob.color.join(",") + ",0.95)");
-      gradient.addColorStop(0.45, "rgba(" + blob.color.join(",") + ",0.55)");
+      gradient.addColorStop(0, "rgba(" + blob.color.join(",") + ",0.81)");
+      gradient.addColorStop(0.45, "rgba(" + blob.color.join(",") + ",0.47)");
       gradient.addColorStop(1, "rgba(" + blob.color.join(",") + ",0)");
       ctx.fillStyle = gradient;
       ctx.beginPath();

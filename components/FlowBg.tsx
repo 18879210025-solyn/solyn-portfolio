@@ -67,8 +67,8 @@ export function FlowBg() {
         const radius = blob.r * Math.max(w, h);
         const [r, g, b] = blob.color;
         const gradient = ctx.createRadialGradient(x, y, 0, x, y, radius);
-        gradient.addColorStop(0, `rgba(${r},${g},${b},0.95)`);
-        gradient.addColorStop(0.45, `rgba(${r},${g},${b},0.55)`);
+        gradient.addColorStop(0, `rgba(${r},${g},${b},0.81)`);
+        gradient.addColorStop(0.45, `rgba(${r},${g},${b},0.47)`);
         gradient.addColorStop(1, `rgba(${r},${g},${b},0)`);
         ctx.fillStyle = gradient;
         ctx.beginPath();
